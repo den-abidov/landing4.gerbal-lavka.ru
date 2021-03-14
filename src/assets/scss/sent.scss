@@ -1,0 +1,30 @@
+// Общие стили
+@import 'common';
+
+main
+{
+  div#content
+  {
+    text-align: center;
+    width:200px;
+    margin:20px auto;
+
+    img
+    {
+      width:150px;
+    }
+
+    h1
+    {
+      font-size: 5rem;
+      color: #80bb27;
+    }
+
+    div#text
+    {
+      width:200px;
+      margin:auto;
+      text-align: left;
+    }
+  }
+}

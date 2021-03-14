@@ -1,0 +1,64 @@
+div#top-banner
+{
+  background-color: darkorange;
+  padding:20px 10px;
+
+  div#banner-content
+  {
+    max-width:320px;
+    margin:auto;
+
+    button
+    {
+      color:white;
+    }
+
+    div#text
+    {
+      text-align: center;
+      color:white;
+
+      img
+      {
+        opacity: 0.5;
+        width:300px;
+        margin-bottom: 20px;
+      }
+
+      h2
+      {
+        font-size:1.9rem;
+        color:white;
+      }
+
+      h3
+      {
+        font-size:1.3rem;
+        color:white;
+      }
+
+      a
+      {
+        color:white;
+        font-size:1rem;
+      }
+
+      a#learn-more
+      {
+        border:1px solid white;
+        background-color: transparent;
+        margin-bottom: 0;
+      }
+      a#learn-more:hover, a#learn-more:focus
+      {
+        background-color: orangered;
+        border:1px solid transparent;
+      }
+      p
+      {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

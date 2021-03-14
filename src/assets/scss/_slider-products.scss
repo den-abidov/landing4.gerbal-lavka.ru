@@ -1,0 +1,87 @@
+  #slider-products
+  {
+    max-width:340px;
+    margin:0px auto;
+    background-color: rgb(240,240,240);
+
+    table
+    {
+      margin-bottom:0px;
+    }
+    table tbody
+    {
+      background-color: rgb(240,240,240);
+      div.product-data
+      {
+        text-align: center;
+        img
+        {
+          height:250px;
+          margin-bottom:10px;
+        }
+        h4
+        {
+          font-size: 1.2rem;
+          margin-bottom:10px;
+        }
+
+        p
+        {
+          margin-bottom:5px;
+        }
+
+        p.description
+        {
+          //font-size:0.9rem;
+          // word-break: break-all;
+          padding:0 10px;
+          text-align: left;
+          text-indent:15px;
+          word-break: break-word;
+        }
+
+        span.full-price
+        {
+          text-decoration: line-through;
+        }
+        span.new-price
+        {
+          color:#80bb27;
+          font-size:2rem;
+        }
+        span.rub
+        {
+          color:#80bb27;
+        }
+        .skidka
+        {
+          padding:4px 8px;
+          display: inline-block;
+          background-color: orangered;
+          color:white;
+          border-radius:5px;
+        }
+        p.skidka-note
+        {
+          font-size:0.9rem;
+          text-align: left;
+          margin-bottom:10px;
+        }
+        a
+        {
+          margin-bottom:0px;
+        }
+      }
+
+    }
+  }
+  div#under-price-note
+  {
+    margin-top:10px;
+    p
+    {
+      text-align: center;
+      margin-top:0px;
+      margin-bottom:0px;
+    }
+  }

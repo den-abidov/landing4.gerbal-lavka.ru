@@ -1,0 +1,22 @@
+#slider-comments
+{
+  max-width:400px;
+  margin:0px auto;
+  background-color: #fdec00;
+  div.post
+  {
+    max-width:300px;
+    margin:auto;
+    padding:10px;
+    p
+    {
+      color:black;
+    }
+    p:last-child
+    {
+      text-align: right;
+      font-size:0.8rem;
+      font-weight:bold;
+    }
+  }
+}

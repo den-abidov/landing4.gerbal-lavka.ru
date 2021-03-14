@@ -1,0 +1,22 @@
+<!-- якорь, чтобы переход был на начало страницы, но под верхним баннером -->
+<span class="anchor" id="anchor-top"></span>
+
+<!-- Верхняя строчка -->
+<div id="top-nav">
+    <button data-toggle="offCanvas" id="menu-button" class="button grey shadow-white"><i class="fas fa-bars"></i> Меню</button>&nbsp;
+
+    <button data-open="callbackModalAsksSponsor" id="top-callback" class="button orange shadow-white">Обратный звонок&nbsp;&nbsp;<i class="fas fa-phone"></i></button>
+
+    {{!-- Если в main.html используешь landing-register, используй слендующее :
+
+    {{#ifpage 'main'}}
+        <button id="top-callback" class="button orange shadow-white" onClick="location.href='main.html#anchor-callback-form'">Обратный звонок&nbsp;&nbsp;<i class="fas fa-phone"></i></button>
+    {{/ifpage}}
+
+    {{#unlesspage 'main'}}
+        <button data-open="callbackModalAsksSponsor" id="top-callback" class="button orange shadow-white">Обратный звонок&nbsp;&nbsp;<i class="fas fa-phone"></i></button>
+    {{/unlesspage}}
+
+    --}}
+</div>
+<div id="spacer-from-top-menu"></div>

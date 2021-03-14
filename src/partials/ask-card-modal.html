@@ -1,0 +1,29 @@
+<!-- Ask Card Modal -->
+<!-- код в to-shop-page.js -->
+<div class="reveal" id="askCardModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+
+    <div id="askCardForm" x-data="askCardModalProps()">
+
+        <div class="spacer-10px"></div>
+        <div class="text-center"><img src="assets/img/card-present-5000.svg"></div>
+        <div class="spacer-10px"></div>
+
+         <label>Укажите номер карты
+            <input type="text" id="cardNumber" class="form-control" :class="{ 'is-invalid-input': error }" x-on:click="error=false" x-model="cardNumber">
+        </label>
+        <div class="spacer-10px"></div>
+        <div class="callout danger" x-show="error">
+            Ошибка : номер карты неверный.
+        </div>
+        <p class="text-center" x-show="error">Внимательно проверьте номер карты и введите ещё раз.</p>
+        <button id="check" class="button success" x-on:click="checkCardNumber()" x-bind:disabled="error">Применить</button>
+
+    </div><!-- #askCardForm -->
+
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <p><a data-close><u>Закрыть</u></a></p>
+</div><!-- #askCardModal -->
+

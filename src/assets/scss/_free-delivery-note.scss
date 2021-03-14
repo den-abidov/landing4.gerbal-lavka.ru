@@ -1,0 +1,11 @@
+.free-delivery-note
+{
+  display: none;//по умолчанию. Покажешь только когда нужно.
+  max-width:500px;
+  margin:auto;
+  p
+  {
+    font-weight: normal!important;
+    color: rgb(75,75,75)!important;
+  }  
+}

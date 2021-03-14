@@ -1,0 +1,260 @@
+//change placeholder color
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+{
+  color: $placeholder_color;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{
+  color: $placeholder_color;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+{
+  color: $placeholder_color;
+}
+
+input::placeholder,
+textarea::placeholder
+{
+  color: $placeholder_color;
+}
+
+// for Orbit arrows
+.orbit-next
+{
+  z-index: 1;
+  background-color:rgba(0,0,0,0.2);
+}
+.orbit-previous
+{
+  z-index: 1;
+  background-color:rgba(0,0,0,0.2);
+}
+
+.nav-arrow /*используй вместе с классами orbit-next и orbit-previous*/
+{
+  color:white;
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 5px;
+  font-size:1.5rem;
+  padding:10px;
+  font-weight: normal;
+}
+
+//цвет треугольника выпадающего под-меню
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a::after
+{
+  border-top-color: white;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+// фон выезжающего меню
+.off-canvas
+{
+  background-color:white;
+}
+
+// callout
+// взял CSS из Bootstrap
+.callout
+{
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.callout.secondary
+{
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+.callout.info
+{
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.callout.success
+{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.callout.warning
+{
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.callout.danger
+{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+// buttons
+// взял CSS из https://cssbuttoncreator.com/
+// НО он несовместим с работой CSSautoprefixer,
+// поэтому заменил на CSS из https://cssgradient.io/
+.button
+{
+  border-radius: 5px;
+}
+.button.success
+{
+  background-color: $green;
+  color:white;
+}
+.button.success:hover
+{
+  background-color: $green_hover;
+  color:white;
+}
+
+.button.success[disabled], .button.success[disabled]:hover
+{
+  background-color: $green_hover;
+  color:white;
+  opacity:1;
+}
+
+button.shadow-white
+{
+  -webkit-box-shadow: 1px 1px 20px 0 #FFFFFF;
+  -moz-box-shadow: 1px 1px 20px 0 #FFFFFF;
+  box-shadow: 1px 1px 20px 0 #FFFFFF;
+}
+
+button.gradient-pink
+{
+  background-image: -moz-linear-gradient( -96deg, rgb(84,0,198) 0%, rgb(146,0,182) 80%);
+  background-image: -webkit-linear-gradient( -96deg, rgb(84,0,198) 0%, rgb(146,0,182) 80%);
+  background-image: -ms-linear-gradient( -96deg, rgb(84,0,198) 0%, rgb(146,0,182) 80%);
+}
+
+button.gradient-pink:hover, button.gradient-pink:focus, button.gradient-pink:active
+{
+  background-image: -moz-linear-gradient( -86deg, rgb(84,0,198) 0%, rgb(146,0,182) 100%);
+  background-image: -webkit-linear-gradient( -86deg, rgb(84,0,198) 0%, rgb(146,0,182) 100%);
+  background-image: -ms-linear-gradient( -86deg, rgb(84,0,198) 0%, rgb(146,0,182) 100%);
+}
+
+button.gradient-grey
+{
+  background: rgb(46,46,46);
+  background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(153,153,153,1) 100%);
+
+  /*background: #2E2E2E;
+  background-image: -webkit-linear-gradient(top, #2E2E2E, #999999);
+  background-image: -moz-linear-gradient(top, #2E2E2E, #999999);
+  background-image: -ms-linear-gradient(top, #2E2E2E, #999999);
+  background-image: -o-linear-gradient(top, #2E2E2E, #999999);
+  background-image: -webkit-gradient(to bottom, #2E2E2E, #999999);*/
+}
+
+button.gradient-grey:hover, button.gradient-grey:focus, button.gradient-grey:active
+{
+  background: rgb(23,23,23);
+  background: linear-gradient(180deg, rgba(23,23,23,1) 0%, rgba(114,114,114,1) 100%);
+
+  /*background: #171717;
+  background-image: -webkit-linear-gradient(top, #171717, #727272);
+  background-image: -moz-linear-gradient(top, #171717, #727272);
+  background-image: -ms-linear-gradient(top, #171717, #727272);
+  background-image: -o-linear-gradient(top, #171717, #727272);
+  background-image: -webkit-gradient(to bottom, #171717, #727272);*/
+}
+
+button.gradient-orange
+{
+  background: rgb(255,30,0);
+  background: linear-gradient(180deg, rgba(255,30,0,1) 0%, rgba(255,186,0,1) 100%);
+
+  /*background: #FF1E00;
+  background-image: -webkit-linear-gradient(top, #FF1E00, #FFBA00);
+  background-image: -moz-linear-gradient(top, #FF1E00, #FFBA00);
+  background-image: -ms-linear-gradient(top, #FF1E00, #FFBA00);
+  background-image: -o-linear-gradient(top, #FF1E00, #FFBA00);
+  background-image: -webkit-gradient(to bottom, #FF1E00, #FFBA00);*/
+}
+button.gradient-orange:hover, button.gradient-orange:focus, button.gradient-orange:active
+{
+  background: rgb(225,26,0);
+  background: linear-gradient(180deg, rgba(225,26,0,1) 0%, rgba(221,161,0,1) 100%);
+
+  /*background: #E11A00;
+  background-image: -webkit-linear-gradient(top, #E11A00, #DDA100);
+  background-image: -moz-linear-gradient(top, #E11A00, #DDA100);
+  background-image: -ms-linear-gradient(top, #E11A00, #DDA100);
+  background-image: -o-linear-gradient(top, #E11A00, #DDA100);
+  background-image: -webkit-gradient(to bottom, #E11A00, #DDA100);*/
+}
+
+// специально для кнопки в topNav.html #menu-button
+button.grey
+{
+  background-color: rgb(100,100,100);
+}
+
+button.grey:hover, button.grey:focus, button.grey:active
+{
+  background-color: rgb(120,120,120);
+}
+
+// специально для кнопки в topNav.html #top-callback
+button.orange
+{
+  background-color: rgb(255,110,0);
+}
+
+button.orange:hover, button.orange:focus, button.orange:active
+{
+  background-color: rgb(255,130,20);
+}
+
+.callout.secondary
+{
+  border: none;
+  border-left:4px solid $green;
+  background-color: rgba(0,0,0,0.03);
+
+  /*i
+  {
+    margin-left:-1rem;
+  }*/
+}
+
+.callout.secondary.fanless /* как дизайн поста на сайте fanlesstech.com */
+{
+  background-color: white;
+  border: 1px solid #dddddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  border-left:4px solid $green;
+  i
+  {
+    //margin-left:0!important;
+  }
+}
+/*
+a
+{
+  color:$green;
+}
+a:hover,a:focus
+{
+  background-color: rgba(0,200,0,0.1);
+}
+a:visited
+{
+  color:$green_darker;
+} */

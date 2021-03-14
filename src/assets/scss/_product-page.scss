@@ -1,0 +1,93 @@
+@import "comment-form";
+
+.fade-color
+{ 
+  color:$fade-color; 
+}
+
+h1 { color: $title_color;  margin-top:8px;      }
+h2 { color: $title_color;    }
+h3 { color: $title_color; text-align: center; }
+
+img.resized
+{
+  height:400px;
+}
+
+header
+{
+  text-align: center;
+}
+
+section {  margin-bottom:20px; }
+
+/* чтобы контент не залезал под меню свенрху */
+.anchor
+{
+  display: block;
+  height: 40px; /*same height as header*/
+  margin-top: -40px; /*same height as header*/
+  visibility: hidden;
+}
+
+/* Стили для типовых страниц с описанием продукта */
+#content
+{
+  max-width:800px;
+  margin:auto;
+
+  #links
+  {
+    max-width:200px;
+    margin:auto;
+
+    ul li
+    {
+      list-style-type: none;
+      margin-bottom:0px;  
+      a
+      {
+        text-decoration: none;
+      }
+    } 
+  } 
+  p
+  {
+    text-indent:15px;
+    margin-bottom:0px; 
+  }
+  #composition
+  {
+    #components
+    {
+      p
+      {
+        text-indent:0px;
+      }
+      .component
+      {
+        background-color: orange;
+        color:white;
+        display:inline-block;
+        padding:4px 10px;
+        border-radius:4px;
+        text-indent:0px;
+      }
+    }
+    table th
+    {
+      font-size:normal;
+      color:white;
+      background-color: $theme_color;
+    }
+  }
+}
+
+#price-full
+{
+  text-decoration:line-through;
+}
+#price-here
+{
+  font-size:1.5rem;
+}

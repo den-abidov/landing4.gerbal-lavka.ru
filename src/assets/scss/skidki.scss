@@ -1,0 +1,30 @@
+// Общие стили
+@import 'common';
+
+header
+{
+  text-align: center;
+  img
+  {
+    //width:80px;
+    //vertical-align: text-bottom;
+  }
+}
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding:0 10px;
+
+  h3, h4, h5
+  {
+    text-align: center;
+    color:$gray4;
+  }
+  p
+  {
+    text-indent: 15px;
+  }
+}
+

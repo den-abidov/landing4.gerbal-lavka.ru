@@ -1,0 +1,26 @@
+<!--
+JS-файлы, для работы фильтрования
+ВАЖНО! Соблюдай порядок :
+  show-content.js
+  settings.js
+  client.js
+  get-from-SS.js
+  check-filter-results.js
+  fetch-filter-results.js
+  run-filtering.js
+-->
+<script src="{{root}}assets/js/filtering/show-content.js" inline></script>
+<!--
+settings.js вызывается раньше, выше, в common-JS-libs
+
+Из этого файла используются параметры :
+  check_once:true,
+  filters_url:'https://filters.gerbal-lavka.ru/api/filter',
+
+<script src="{{root}}assets/js/filtering/settings.js" inline></script>
+-->
+<script src="{{root}}assets/js/filtering/client.js" inline></script>
+<script src="{{root}}assets/js/filtering/get-from-SS.js" inline></script>
+<script src="{{root}}assets/js/filtering/check-filter-results.js" inline></script>
+<script src="{{root}}assets/js/filtering/fetch-filter-results.js" inline></script>
+<script src="{{root}}assets/js/filtering/run-filtering.js" inline></script>

@@ -1,0 +1,15 @@
+архив
+node_modules
+dist/assets/video
+*.mp4
+*.m4v
+*.mp3
+.idea
+# src/partials/GTM-to-head.html
+# src/partials/GTM-to-body.html
+# dist/robots.txt
+# dist/sitemap.txt
+# dist/yandex_45b2423eb3417365.html
+# dist/yandex_bfc4a08e123ac9d0.html
+# dist/yandex_c532c42f1c4b24b3.html
+# dist/google802c2bbfc0525a87.html

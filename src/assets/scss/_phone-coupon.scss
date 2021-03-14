@@ -1,0 +1,78 @@
+div#phone-coupon
+{
+  max-width:600px;
+  margin:auto;
+  padding:10px;
+  border-radius: 5px;
+
+  table tbody
+  {
+    background-color: transparent;
+    border:none;
+    td:first-child
+    {
+      width:80px;
+      text-align: center;
+      img  {  width:50px;   }
+    }
+  }
+
+  h6
+  {
+    text-align: center;
+    color: darkred;
+    font-size:1.3rem;
+    margin-bottom: 0px;
+  }
+  p
+  {
+    text-align: left;
+    color:$gray4;
+  }
+
+  .cell.padding-5px
+  {
+    padding:5px;
+  }
+
+  .cell.padding-10px
+  {
+    padding:10px;
+  }
+
+  div#form
+  {
+    padding:20px;
+    border-radius: 5px;
+    background-color: $gray9;
+
+    input
+    {
+      text-align: center;
+    }
+  }
+
+  // видимость сообщений об отправке
+  // #phone-coupon-sending,  #phone-coupon-success,  #phone-coupon-failure { display: none; }
+
+  #phone-coupon-send
+  {
+    width:100%;
+    font-size:1rem;
+    margin-bottom: 0px;
+  }
+  #phone-coupon-sending
+  {
+    margin-top:10px;
+    margin-bottom: 0px;
+    text-align: center;
+    color:black;
+  }
+  #phone-coupon-success, #phone-coupon-failure
+  {
+    margin-top:10px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+}

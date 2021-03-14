@@ -1,0 +1,4 @@
+function showContent()
+{
+    $("#loading").fadeOut();
+}

@@ -1,0 +1,83 @@
+---
+
+pageName: register
+mediaUrl: 'https://media.gerbal-lavka.ru/assets/video/herbalife'
+title: Гербалайф | Herbalife — как зарегистрироваться
+description: 'Регистрация в Гербалайф : сколько стоит и как её пройти. Как зарегистрироваться в Гербалайф бесплатно.'
+keywords: регистрация Гербалайф, как зарегистрироваться в Гербалайф, стоимость регистрации в Гербалайф, бесплатная регистрация в Гербалайф, как зарегистрироваться в Гербалайф бесплатно
+
+---
+<header xmlns="http://www.w3.org/1999/html">
+  <div>
+    <img src="assets/img/register/contract.svg">
+  </div>
+  <h1>Регистрация в Гербалайф</h1>
+  <p>Пошаговая инструкция</p>
+</header>
+
+<main>
+  <!-- div class="callout warning">
+    <p>&nbsp;&nbsp;&nbsp;В связи с недавними дополнениями маркетинг плана Гербалайф, данный раздел сейчас обновляется.</p>
+    <p>&nbsp;&nbsp;&nbsp;Тем не менее, по вопросам регистрации, мы можем проконсультировать Вас по телефону.</p>
+  </div -->
+  <section>
+    <h3>Подготовка</h3>
+    <p>Перед регистрацией, убедитесь, что выполнены следующие условия :</p>
+    <table>
+      <tbody>
+        <tr><td>У Вас есть id-номер спонсора. <a data-open="whereToGetSponsorIdModal">Где его взять?</a></td></tr>
+        <tr><td>Вы определились кем хотите регистрироваться : как Клиент или как Партнёр. <a data-open="clientVsPartnerModal">Что выбрать?</a></td></tr>
+        <tr><td>Регистрация платная. Для завершения регистрации Вам нужно будет приобрести стартовый <a data-open="bookModal">набор Клиента</a> за 540 руб. или <a data-open="kitModal">набор Партнёра</a> за 2400 руб. Приготовьте банковскую карту. <a data-open="registerFreeModal">Как зарегистрироваться бесплатно?</a></td></tr>
+      </tbody>
+    </table>
+
+    <p>Во время регистрации Вас попросят указать свою эл. почту и придумать пароль. Они Вам пригодятся, чтобы потом заходить в личный кабинет на сайте Гербалайф и совершать там покупки. Чтобы не забыть эти данные, и потом не тратить время на их восстановление, лучше их сразу записать. Для этого приготовьте блокнотик или тетрадочку и разлинуйте следующим образом :</p>
+    <div class="text-center"><img id="notepad" src="assets/img/register/pic1-notepad.png"/></div>
+    <!-- p>Чтобы продолжить, выберите с какого устройства будете регистрироваться : с телефона или с компьютера. Сайт выглядит немножко по разному на разных экранах.</p>
+    <div class="text-center"><a class="button success" href="#"><i class="fas fa-desktop"></i> ПК или ноутбук <i class="fas fa-laptop"></i></a>&nbsp;&nbsp;&nbsp;<a class="button success" href="#"><i class="fas fa-mobile-alt"></i> телефон</a></div -->
+  </section>
+  <!-- section>
+    <h2>Регистрация с компьютера</h2>
+    <h3>Открываем сайт Гербалайф</h3>
+    <p>Официальный сайт компании Гербалайф : <a href="https://ru.myherbalife.com">ru.myherbalife.com</a></p>
+    <p>Заходим на сайт и нажимаем на кнопку ПОДПИШИТЕСЬ ОНЛАЙН.</p>
+    <div class="desktop"></div>
+    <p class="text-center">ЭТОТ РАЗДЕЛ ОБНОВЛЯЕТСЯ ...</p>
+  </section -->
+
+  <br/>
+  <section>
+    <h3>Регистрация</h3>
+    <p class="text-center">Регистрируемся здесь : <a href="https://ru.myherbalife.com" target="_blank">ru.myherbalife.com</a></p>
+    <p class="text-center"><b>Видео.</b> Регистрируемся как КЛИЕНТ.</p>
+    <div class="video">
+      <video controls poster="{{mediaUrl}}/register-client.svg" width="100%">
+        <source src="{{mediaUrl}}/register-client.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <br/>
+    <p class="text-center"><b>Видео.</b> Регистрируемся как ПАРТНЁР.</p>
+    <div class="video">
+      <video controls poster="{{mediaUrl}}/register-partner.svg" width="100%">
+        <source src="{{mediaUrl}}/register-partner.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- Через YouTube канал
+    <div class="videoSuperWrapper">
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/qJJez1eN5-g?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div -->
+  </section>
+  <br/>
+  {{> Herbalife-links }}
+
+</main>
+
+{{> client-vs-partner-modal }}
+{{> where-to-get-sponsor-id-modal }}
+{{> book-modal }}
+{{> kit-modal }}
+{{> register-free-modal }}

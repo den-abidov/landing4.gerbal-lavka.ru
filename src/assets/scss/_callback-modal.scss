@@ -1,0 +1,82 @@
+div#callbackModal
+{
+    max-width:340px!important;
+    margin:auto!important;
+    height:auto!important;
+    min-height:auto!important;
+    text-align:center;
+
+    div#callbackForm
+    {
+        width: 240px;
+        margin:auto;
+
+        div#logo
+        {
+            width:100px;
+            margin:10px auto;
+            img{ width:100px;}
+            background-color: white!important;
+        }
+
+        h4
+        {
+            text-align: center;
+            margin-bottom:20px;
+            color: black;
+        }
+        label
+        {
+            text-align: left;
+            font-size: 0.9rem;
+            color:$gray3;
+        }
+
+        #whenToCall
+        {
+            font-size: 1rem;
+        }
+        input#phone, input#name
+        {
+            width:100%;
+            text-align: center;
+            font-size:1.1rem;
+        }
+        button#send
+        {
+            font-size: 1rem!important;
+        }
+        div#error
+        {
+            //display:none;
+        }
+        button#send
+        {
+            width:100%;
+            margin-bottom: 10px;
+        }
+        p#sending
+        {
+            //display:none;
+        }
+        div#success
+        {
+            //display:none;
+        }
+        div#failure
+        {
+            //display:none;
+        }
+        div.callout
+        {
+            p{margin-bottom: 0px;}
+        }
+    }
+
+    .close-modal-link
+    {
+        text-align:center;
+        margin-top:0px;
+        margin-bottom:0;
+    }
+}

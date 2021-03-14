@@ -1,0 +1,45 @@
+#slider
+{
+  max-width:400px;
+  margin:0px auto;
+
+  table tbody
+  {
+    background-color: rgb(240,240,240);
+  }
+
+  table tbody tr td:first-child
+  {
+    text-align: center;
+    width:100px;
+    img#aloe
+    {
+      height:150px;
+    }
+  }
+  table tbody tr td:last-child p
+  {
+    text-align: left;
+
+    span.full-price
+    {
+      text-decoration: line-through;
+    }
+    span.new-price
+    {
+      color:#80bb27;
+      font-size:2rem;
+    }
+    span.rub
+    {
+      color:#80bb27;
+    }
+    .skidka
+    {
+      display: inline-block;
+      background-color: orangered;
+      color:white;
+      border-radius:5px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// Общие стили
+@import 'common';
+
+//@import "header";
+//@import "slider-products";
+@import "scroll-down-arrow";
+@import "pulsing-button";
+
+body
+{
+  background-color: white;
+}
+
+main
+{
+  padding:0px 10px;
+
+  div#slogan
+  {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  div#proposal
+  {
+    max-width:400px;
+    margin:auto;
+
+    img
+    {
+      width:200px;
+    }
+    i
+    {
+      font-size:1.4rem;
+      color:$green;
+    }
+  }
+  div#cta
+  {
+    max-width:400px;
+    margin:auto;
+    text-align: center;
+  }
+}
+

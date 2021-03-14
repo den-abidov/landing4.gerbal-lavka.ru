@@ -1,0 +1,53 @@
+main div#hero {
+  text-align: center; }
+  main div#hero h1 {
+    margin: 20px auto; }
+
+main div#login {
+  max-width: 200px;
+  margin: auto;
+  text-align: center; }
+  main div#login input {
+    text-align: center; }
+  main div#login button {
+    width: 100%; }
+
+main div#settings {
+  display: none;
+  max-width: 320px;
+  margin: auto;
+  text-align: center; }
+  main div#settings h5 {
+    text-align: center; }
+  main div#settings table td:first-child {
+    text-align: right;
+    padding-right: 20px; }
+  main div#settings table td:last-child {
+    text-align: left; }
+  main div#settings img {
+    width: 20px;
+    margin-bottom: 5px; }
+  main div#settings .case p {
+    text-align: left; }
+  main div#settings .case div.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px; }
+  main div#settings .case table {
+    background-color: white;
+    width: 100%; }
+    main div#settings .case table img {
+      width: 30px; }
+    main div#settings .case table img.transparent {
+      opacity: 0.1; }
+    main div#settings .case table svg {
+      display: inline-block; }
+      main div#settings .case table svg line.background-line {
+        stroke: #f0f0f0;
+        stroke-width: 10; }
+      main div#settings .case table svg line.red-line {
+        stroke: #f00000;
+        stroke-width: 10; }
+      main div#settings .case table svg line.green-line {
+        stroke: #00c800;
+        stroke-width: 10; }

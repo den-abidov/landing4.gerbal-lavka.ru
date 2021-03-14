@@ -1,0 +1,63 @@
+// Общие стили
+@import 'common';
+@import "_Herbalife.scss";
+
+header
+{
+  text-align: center;
+  img
+  {
+    width:80px;
+    vertical-align: text-bottom;
+  }
+}
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding:20px 10px;
+
+  section
+  {
+    margin-bottom:30px;
+    h2
+    {
+      font-size: 1.2rem;
+      text-align: center;
+      color:darkred;
+    }
+    table
+    {
+      span
+      {
+        display: block;
+      }
+    }
+    /*.highlight
+    {
+      background-color: rgba(0,0,0,0.05);
+    }*/
+  }
+
+  section#contents
+  {
+    max-width:320px;
+    margin:auto;
+    ul
+    {
+      list-style-type:none;
+    }
+  }
+
+  h3, h4, h5
+  {
+    text-align: center;
+    color:$gray4;
+  }
+  p
+  {
+    text-indent: 15px;
+  }
+}
+

@@ -1,0 +1,19 @@
+// Общие стили
+@import 'common';
+
+@import "product-page";
+
+// переопредели размер
+#links
+{
+    max-width:300px!important;
+}
+
+.red
+{
+    color:red;
+}
+.green
+{
+    color:$green_darker;
+}

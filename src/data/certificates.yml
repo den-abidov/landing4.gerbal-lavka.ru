@@ -1,0 +1,131 @@
+--- 
+item: 
+  - 
+    file: evening-shake.pdf
+    name: "Вечерний коктейль Формула 1"
+  - 
+    file: formula1-cream-brule.pdf
+    name: "Коктейль Формула 1 крем-брюле"
+  - 
+    file: formula1-capucino.pdf
+    name: "Коктейль Формула 1 капучино"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 клубника"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 ваниль"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 пина-колада"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 маракуйя"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 дыня"
+  - 
+    file: formula1-others.pdf
+    name: "Коктейль Формула 1 кремовое печенье"
+  - 
+    file: formula1-chocolate.pdf
+    name: "Коктейль Формула 1 шоколад"
+  - 
+    file: formula1-chocolate-biscuit.pdf
+    name: "Коктейль Формула 1 шоколадное печенье"
+  - 
+    file: tomato-soup.pdf
+    name: "Томатный суп с базиликом"
+  - 
+    file: formula3.pdf
+    name: "Протеиновая смесь Формула 3 (белок)"
+  - 
+    file: aloe-cranberry.pdf
+    name: "Напиток Алоэ клюква"
+  - 
+    file: aloe-classic.pdf
+    name: "Напиток Алоэ классический"
+  - 
+    file: tea.pdf
+    name: "Травяной напиток классический"
+  - 
+    file: tea.pdf
+    name: "Травяной напиток лимон"
+  - 
+    file: tea.pdf
+    name: "Травяной напиток малина"
+  - 
+    file: extra-cal.pdf
+    name: Экстра-Каль
+  - 
+    file: herbalifeline-max.pdf
+    name: "Гербалайфлайн Макс"
+  - 
+    file: niteworks.pdf
+    name: Найтворкс
+  - 
+    file: oyan.pdf
+    name: "Овсяно-яблочный напиток"
+  - 
+    file: kpv.pdf
+    name: "Комплекс пищевых волокон"
+  - 
+    file: mini-protein-bites.pdf
+    name: "Протеиновые мини-батончики"
+  - 
+    file: formula1-express-chocolate.pdf
+    name: "Формула 1 экспресс шоколад"
+  - 
+    file: protein-bars.pdf
+    name: "Протеиновые батончики ванидь-миндаль"
+  - 
+    file: protein-bars.pdf
+    name: "Протеиновые батончики шоколад-арахис"
+  - 
+    file: protein-bars.pdf
+    name: "Протеиновые батончики лимон"
+  - 
+    file: formula2-women.pdf
+    name: "Формула 2. Комплекс витаминов и минералов для женщин"
+  - 
+    file: formula2-men.pdf
+    name: "Формула 2. Комплекс витаминов и минералов для мужчин"
+  - 
+    file: thermo-complete.pdf
+    name: "Термо Комплит"
+  - 
+    file: yellow-tablets.pdf
+    name: "Желтые таблетки"
+  - 
+    file: cell-activator.pdf
+    name: "Клеточный активатор"
+  - 
+    file: schizandra.pdf
+    name: Шизандра
+  - 
+    file: roseguard.pdf
+    name: Роузгард
+  - 
+    file: immune-booster.pdf
+    name: "Иммьюн Бустер"
+  - 
+    file: cell-u-loss.pdf
+    name: Целл-у-лосс
+  - 
+    file: tan-kuai.pdf
+    name: "Тан Куай"
+  - 
+    file: herbalife24.pdf
+    name: "Спортивный коктейль \"Восстановление силы\""
+  - 
+    file: cr7-drive.pdf
+    name: "Спортивный напиток \"CR7 Drive\""
+  - 
+    file: liftoff.pdf
+    name: Лифтофф
+  - 
+    file: NRG-tea.pdf
+    name: "NRG чай"
+  - 
+    file: NRG-tablets.pdf
+    name: "NRG таблетки"

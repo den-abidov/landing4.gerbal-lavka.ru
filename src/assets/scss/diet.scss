@@ -1,0 +1,97 @@
+// Общие стили
+@import 'common';
+
+@import "product-page";
+
+header /*шапка - фоновая картинка + крупный текст*/
+{
+  // background: url("../../assets/img/food-background.jpeg");
+  background: url("assets/img/food-background.jpeg");
+  background-repeat: no-repeat;  
+  background-size:cover;
+  background-position:center;
+  padding: 0px;
+  margin: 0px;
+  
+  text-align: center;
+  div
+  {
+      max-width:680px; 
+      margin:auto;
+      background-color: rgba(0,0,0,0.5);
+      padding:5px 15px;
+      border-radius:5px;
+
+      word-wrap: break-word; 
+
+      h1, h2
+      {
+        color:white;         
+      }
+  }  
+}
+#content  /* контейнер контента */
+{
+
+  max-width:540px; 
+  margin:auto;
+
+  #links
+  {
+    max-width:450px;
+  } 
+ 
+  #calculator
+  {
+      text-align: center;
+      text-indent: 0px;
+      p 
+      {
+        text-indent:0px;
+        text-align: center;    
+      }
+      #calculate-button 
+      {
+          width:100%;
+      }
+      #mass-input
+      {
+       text-align:center;
+       font-size:2rem;
+       color:$theme_color;
+      }
+      #result-p
+      {
+           font-size:4rem; 
+           color:$theme_color;
+           margin-bottom:0px;
+      }
+  }
+}
+#see-also
+{
+  p
+  {
+    text-indent:0px;
+    margin-bottom:0px;    
+  }
+}
+
+.reveal  /* открывающийся модал */
+{
+  max-width:500px;
+  padding-top:40px;
+  padding-left:20px;
+  padding-right:20px;
+
+  p
+  {
+    text-indent: 15px;
+    text-align: justify;
+  }
+  p:last-child
+  {
+    text-indent: 0px;
+    text-align: center;
+  }
+}

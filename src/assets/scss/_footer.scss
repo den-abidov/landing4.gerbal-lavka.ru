@@ -1,0 +1,78 @@
+footer
+{
+  width:100%;
+  margin-top:0px;
+
+  p, li, a
+  {
+    color:$gray7;
+  }
+  a:hover, a:focus, a:active
+  {
+    color:$gray3;
+  }
+
+  ul
+  {
+    width:220px;
+    margin:auto!important;
+    li
+    {
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    hr
+    {
+      margin-top:5px;
+      margin-bottom:5px;
+      border:0.5px solid white;
+      width:100%;
+    }
+  }
+
+  img
+  {
+    opacity:0.5;
+    width:240px;
+  }
+
+  div#bottom-p
+  {
+    max-width:300px;
+    margin:auto;
+    padding-top:30px;
+    p
+    {
+      text-align: center;
+      margin-bottom:5px;
+    }
+  }
+
+  .footer-menu-item-selected //класс, чтобы пометить пункт меню
+  {
+    background-color: rgba(255,255,255,0.5);
+    color:black;
+  }
+}
+
+//респонсивность футера
+@media only screen and (min-width: 650px) //на больших экранах зафиксируй внизу
+{
+  footer
+  {
+    position: fixed;
+    bottom: 0;
+    background-color: $green;
+    height:10px;
+  }
+}
+@media only screen and (max-width: 649px)//на малых экранах сними фиксацию
+{
+  footer
+  {
+    position:relative;
+    background-color: #515151;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+}

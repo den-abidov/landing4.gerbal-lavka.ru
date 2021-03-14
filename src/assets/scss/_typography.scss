@@ -1,0 +1,27 @@
+@import "colors";
+/*
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, button, label
+{
+  font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
+}
+*/
+h1
+{ 
+  text-align: center;
+  color: $title_color;
+  margin-top:8px;
+}
+
+// Регулировка размера шрифтов
+
+/* На малых экранах, 0...600 px */
+@media screen and (max-width: 600px)
+{
+
+}
+
+/* На больших экранах, >600 px */
+@media screen and (min-width: 601px)
+{
+
+}

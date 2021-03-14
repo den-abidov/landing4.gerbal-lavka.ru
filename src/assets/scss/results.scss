@@ -1,0 +1,110 @@
+// Общие стили
+@import 'common';
+
+@import "showMoreOrLess";
+@import "disclaimer";
+
+.results-block
+{
+
+  border:1px solid rgb(240,240,240);
+
+    .parent-block
+    {
+      position:relative;
+      background-color:rgb(240,240,240);
+      text-align:center;
+      overflow:hidden;
+
+      .result-img
+      {
+        margin-top:90px;
+      }
+
+      .child-block
+      {
+        position:absolute;
+        top:0;left:0;
+        width:100%;height:100%;
+
+        line
+        {
+          stroke:rgb(255,255,255);stroke-width:2;
+        }
+
+      }
+      .user-name
+      {
+        background-color:rgb(240,240,240);
+        font-size:1rem;//1.2rem;
+        color:gray;
+      }
+      .user-result
+      {
+        width:150px;
+        background-color:$theme_color;
+        font-size:1.6rem;
+        color:white;
+      }
+    }
+    .story
+    {
+      padding:15px 15px;
+      text-indent:15px;
+      text-align:justify;
+      color:rgb(100,100,100);
+    }
+
+}
+
+.img-container
+{
+  max-width:600px; height:auto;
+  //background:url('../img/results/Lyudmila_M.png');
+  background-color: rgb(200,200,200);
+  background-size: 100% 100%;//contain или cover?
+  text-align: center;
+
+  .result-summary-line1
+  {
+    color:white;
+    background-color: rgba(100,100,100,1);
+    padding:10px 20px;
+    border-radius: 5px;
+  }
+  .result-summary-line2
+  {
+    color:white;
+    background-color: rgba(0,180,0,1);
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size:2rem;
+  }
+
+  p.branding
+  {
+    color:rgba(255,255,255,0.4);
+    font-size:2rem;
+    margin-top:150px;
+  }
+
+}
+
+
+.story
+{
+  p
+  {
+    text-indent: 20px;
+    text-align: justify;
+  }
+}
+
+#disclaimer
+{
+  max-width:850px;margin:auto;
+  margin-bottom:20px;
+  border:1px solid rgb(200,200,200);
+  padding: 10px 15px 0px 15px;
+  color:rgb(100,100,100);
+}

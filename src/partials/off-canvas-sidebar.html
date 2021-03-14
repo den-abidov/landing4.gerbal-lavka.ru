@@ -1,0 +1,77 @@
+<nav class="off-canvas position-left" id="offCanvas" data-off-canvas>
+  <!-- Close button -->
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p class="menu-title">Как купить <img src="assets/img/shopping-bag-3.svg"></p>
+  <ul class="vertical menu accordion-menu off-canvas-menu" data-accordion-menu>
+    <li><a id="topNav-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a></li>
+    <li><a id="topNav-katalog" href="katalog.html"><i class="fas fa-barcode"></i>&nbsp;&nbsp;Каталог и Цены</a></li>
+    <li><a id="topNav-skidki" href="skidki.html"><i class="fas fa-tags"></i>&nbsp;&nbsp;Скидки</a></li>
+    <!-- li><a id="topNav-actions" href="actions.html"><i class="fas fa-fire-alt"></i>&nbsp;&nbsp;Акции</a></li -->
+    <li><a id="topNav-how-to-buy" href="how-to-buy.html"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Как купить</a></li>
+    {{!--
+    <li>
+      <a id="topNav-how-to-buy" href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Как купить</a>
+      <ul class="menu vertical nested">
+        <!-- li><a id="topNav-buy-options" href="buy-options.html#center-acnhor">Как купить</a></li>
+        <li><a id="topNav-buy-option-Herbalife" href="buy-option-Herbalife.html#call-anchor">Покупка <b>после</b> регистрации</a></li>
+        <li><a id="topNav-buy-option-us" href="buy-option-us.html#call-anchor">Покупка <b>без</b> регистрации</a></li>
+        <li><a id="topNav-buy" href="buy-options-compared.html#call-anchor">Сравнение условий покупки</a></li -->
+        <li><a id="topNav-buy-options" href="buy-options.html#center-anchor">Способы покупки</a></li>
+        <li><a id="topNav-buy-option-Herbalife" href="buy-option-Herbalife.html">Без посредников</a></li>
+        <li><a id="topNav-buy-option-us" href="buy-option-us.html">Без регистрации</a></li>
+        <li><a id="topNav-buy" href="buy-options-compared.html">Что выбрать Вам ?</a></li>
+      </ul>
+    </li> --}}
+    <li><a id="topNav-oplata" href="payment.html"><i class="far fa-credit-card"></i>&nbsp;&nbsp;Оплата</a></li>
+    <li><a id="topNav-dostavka" href="dostavka.html"><i class="fas fa-truck"></i>&nbsp;&nbsp;Доставка</a></li>
+    <li><a id="topNav-track" href="track-order.html"><i class="fas fa-search"></i>&nbsp;&nbsp;Отслеживание</a></li>
+    <li><a id="topNav-garantii" href="garantii.html"><i class="fas fa-shield-alt"></i>&nbsp;&nbsp;Защита покупателя</a></li>
+    <!-- li><a id="topNav-register" href="register.html"><i class="far fa-edit"></i>&nbsp;&nbsp;Регистрация</a></li -->
+    <li>
+      <a id="topNav-Herbalife" href="#"><i class="far fa-edit"></i>&nbsp;&nbsp;Регистрация в Гербалайф</a></a>
+      <ul class="menu vertical nested">
+        <li><a id="topNav-Herbalife-why-register" href="Herbalife-why-register.html">1 Зачем регистрироваться</a></li>
+        <li><a id="topNav-Herbalife-how-to-buy" href="Herbalife-how-to-buy.html">2 Как покупать после регистрации</a></li>
+        <li><a id="topNav-register" href="register.html">3 Инструкция : как пройти регистрацию</a></li>
+        <li><a id="topNav-Herbalife-skidki" href="Herbalife-skidki.html">4 Скидки в Гербалайф</a></li>
+        <li><a id="topNav-buy-options-compared" href="buy-options-compared.html">5 Регистрироваться или купить через нас</a></li>
+      </ul>
+    </li>
+    <li><a id="topNav-otzivi" href="comments.html"><i class="far fa-comment-dots"></i>&nbsp;&nbsp;Отзывы покупателей</a></li>
+    <li><a id="topNav-contacts" href="contacts.html"><i class="far fa-address-card"></i>&nbsp;&nbsp;Контакты</a></li>
+    <!-- li>&nbsp;<a id="topNav-shop" class="button success" href="https://shop.gerbal-lavka.ru/catalog">{{> icon-bootstrap-cart }}&nbsp;&nbsp;Магазин</a></li -->
+    {{> to-shop}}
+  </ul>
+  <br/>
+  <p class="menu-title">Коррекция веса <img src="assets/img/scale.svg"></p>
+  <ul class="vertical menu accordion-menu off-canvas-menu" data-accordion-menu>
+    <li><a id="topNav-results" href="results.html">Результаты клиентов</a></li>
+    <li><a id="topNav-weightloss" href="weightloss.html">Как продукция Гербалайф помогает снизить вес</a></li>
+    <li><a id="topNav-Herbalife-breakfast" href="Herbalife-breakfast.html">Завтрак Гербалайф</a></li>
+    <li><a id="topNav-water" href="water.html">Питьевой режим</a></li>
+    <li><a id="topNav-diet" href="diet.html">План питания</a></li>
+    <li><a id="topNav-diary" href="diary.html">Дневник питания</a></li>
+    <li><a id="topNav-programs" href="programs.html">Программы коррекции веса</a></li>
+    <li><a id="topNav-turbo-drink" href="product-turbo-drink.html">Турбонапиток</a></li>
+    <li><a id="topNav-for-moms" href="for-moms.html">Гербалайф для беременных и кормящих</a></li>
+  </ul>
+  <br/>
+  <p class="menu-title">Обзор продукции <img src="assets/img/herbalife-quality.svg"></p>
+  <ul class="vertical menu accordion-menu off-canvas-menu" data-accordion-menu>
+    <li><a id="topNav-product-formula1" href="product-formula1.html">Коктейль Формула 1</a></li>
+    <li><a id="topNav-product-protein-coffee" href="product-protein-coffee.html">Протеиновый кофе {{> badge-new}}</a></li>
+    <li><a id="topNav-product-formula1-night" href="product-formula1-night.html">Вечерний коктейль</a></li>
+    <li><a id="topNav-product-aloe" href="product-aloe.html">Напиток Алоэ</a></li>
+    <li><a id="topNav-product-tea" href="product-tea.html">Травяной напиток</a></li>
+    <li><a id="topNav-product-formula3" href="product-formula3.html">Белок Формула 3</a></li>
+    <li><a id="topNav-product-Termokomplit" href="product-Termokomplit.html">Термокомплит</a></li>
+    <li><a id="topNav-product-yellow-pills" href="product-yellow-pills.html">Жёлтые таблетки</a></li>
+    <li><a id="topNav-product-formula2" href="product-formula2.html">Мультивитамины Формула 2</a></li>
+    <li><a id="topNav-product-oyan" href="product-oyan.html">Овсяно-яблочный напиток</a></li>
+    <li><a id="topNav-product-kpv" href="product-kpv.html">Комплекс пищевых волокон</a></li>
+  </ul>
+  <br/>
+  <br/>
+</nav>

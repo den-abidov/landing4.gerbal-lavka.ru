@@ -1,0 +1,53 @@
+<!-- используется в модале и на странице main.html -->
+<div id="callback-form" x-data="initForm()">
+
+  <div class="text-left">
+    <label class="form-label">Как Вас зовут</label>
+    <input type="text" class="form-control" placeholder="" id="name" x-on:click="showNameError = false; removeErrorClassFrom('#name');">
+    <p id="name-error" class="error" x-show="showNameError">Пожалуйста укажите как Вас зовут, чтобы мы знали как к Вам обращаться.</p>
+  </div>
+
+  <div class="text-left">
+    <label class="form-label">Ваш телефон</label>
+    <input type="text" class="form-control" placeholder="" id="phone" x-on:click="showPhoneError = false; removeErrorClassFrom('#phone');">
+    <p id="phone-error" class="error" x-show="showPhoneError">Ошибка в номере телефона. Пожалуйста проверьте. Не волнуйтесь, мы никому не передадим Ваши контакты.</p>
+  </div>
+
+  <div class="text-left">
+    <label class="form-label">Когда Вы готовы принять звонок ?</label>
+    <select class="form-select" id="when-to-call">
+      <option value="сейчас" selected>Сейчас</option>
+      <option value="через 30 минут">Через 30 минут</option>
+      <option value="через 1 час">Через 1 час</option>
+      <option value="через 2 часа">Через 2 часа</option>
+      <option value="через 3 часа">Через 3 часа</option>
+      <option value="завтра">Завтра</option>
+    </select>
+  </div>
+
+  <fieldset id="has-sponsor-fieldset">
+    <legend class="margin-bottom-10">У Вас есть консультант по питанию ?</legend>
+    <p id="sponsor-error" class="error text-center"  x-show="showSponsorError">Пожалуйста выберите ответ.</p>
+    <input type="radio" class="form-check-input sponsor" name="sponsor" value="есть" id="has-sponsor" required x-on:click="showWarning=true; showSponsorError=false;">
+    <label for="has-sponsor">Да</label>
+    <input type="radio" class="form-check-input sponsor" name="sponsor" value="нет" id="no-sponsor" x-on:click="showWarning=false; showSponsorError=false;">
+    <label for="no-sponsor">Нет</label>
+  </fieldset>
+
+  <div class="callout warning" id="warning" x-show="showWarning">
+    <div class="text-center"><i class="fas fa-exclamation-triangle"></i></div>
+    <p>Если у Вас есть консультант по питанию, обратитесь к нему (ней).</p>
+    <p>Если же он(а) не хочет Вас регистрировать, не даёт Вам скидку, придумывает причины или ставит Вам условия, чтобы Вы приглашали людей, смело заказывайте обратный звонок - мы Вам поможем. Обращение конфиденциально.</p>
+  </div>
+
+  <div id="call-me">
+    <p id="server-error" class="error center" x-show="showServerError">Техническая ошибка. Не удалось отправить заявку. Попробуйте ещё раз сейчас или позже.</p>
+    <a class="button success" id="submit" x-on:click="showServerError=false; validate();">
+      <span x-show="call">Позвоните мне&nbsp;&nbsp;<i class="fas fa-phone"></i></span>
+      <span x-show="calling">Отправляем&nbsp;&nbsp;<i class="fas fa-circle-notch fa-spin"></i></span>
+    </a>
+  </div>
+  <div class="spacer-10px"></div>
+  <p id="submitted" class="callout success center" x-show="submitted">Заявка отправлена <i class="fas fa-check" style="color:#80bb27;"></i><br/>Ожидайте нашего звонка!</p>
+
+</div>

@@ -1,0 +1,22 @@
+@import "callback-form";
+
+div#callbackModalAsksSponsor
+{
+    max-width:340px!important;
+    margin:auto!important;
+    height:auto!important;
+    min-height:auto!important;
+    text-align:center;
+
+    img
+    {
+        width:100px;
+    }
+
+    .close-modal-link
+    {
+        text-align:center;
+        margin-top:0px;
+        margin-bottom:0;
+    }
+}

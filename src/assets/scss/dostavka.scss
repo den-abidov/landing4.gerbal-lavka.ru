@@ -1,0 +1,73 @@
+// Общие стили
+@import 'common';
+
+@import "shop-invite";
+@import "cities-list-modal";
+
+//@import "foundation.min";
+//@import "motion-ui.min";
+//@import "common";
+/*h4
+{
+    text-align: center;
+}*/
+
+#dostavka
+{
+    max-width:750px;    
+    margin:auto;
+
+    table
+    {
+        margin-top: 12px;
+    }
+    th
+    {
+        background-color: $theme_color;
+        color:white;
+        text-align: left;
+    }
+    /*p
+    {
+        text-indent:15px;
+        text-align:justify;  
+        margin-bottom:2px;      
+    }*/
+    .less-bottom-margin
+    {
+        margin-bottom:2px;
+    }
+    .answer
+    {
+        padding:5px 15px 0px 15px;
+        border-radius: 5px;
+        background-color: rgb(245,245,245);
+        color:rgb(75,75,75);
+        p:last-child
+        {
+            text-align: right;
+        }        
+    }
+    
+    section.delivery
+    {
+        margin-bottom:5px;
+    }
+
+    #free-delivery
+    {
+        //@extend .answer;
+        p
+        {
+            margin-bottom:0px;
+        }
+        p:first-child
+        {
+            font-weight: bold;
+        } 
+        p:last-child
+        {
+            text-align: justify;
+        }
+    }
+}

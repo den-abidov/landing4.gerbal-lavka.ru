@@ -1,0 +1,28 @@
+//@import "common";
+//вместо полной common.scss, использую стили ниже
+
+//урезанная версия _fonts.scss - здесь только то, что используется на странице 404.html
+@font-face 
+{
+  font-family: 'RobotoFont'; 
+  src: url("https://fonts.googleapis.com/css?family=Roboto") format("ttf"); 
+  font-display: fallback; 
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, li, button, label
+{
+  font-family: 'RobotoFont', sans-serif;
+}
+
+:root
+{
+  font-size: 16px;
+}
+
+.center-y
+{
+  display:flex;
+  align-items: center;
+}
+
+@import "off";//там стили для #line1, #line2, #line3, которые используются в partial off.html

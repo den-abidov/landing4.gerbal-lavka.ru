@@ -1,0 +1,56 @@
+@import "common";
+@import "_buy-options.scss";
+@import "table-products";
+
+header
+{
+  text-align: center;
+  img
+  {
+    width:300px;
+    margin-bottom: -40px;
+  }
+}
+
+/*
+main
+{
+  padding:10px;
+  max-width:600px;
+  margin:auto;
+
+  h1, h5
+  {
+    font-size:1.5rem;
+    text-align:center;
+  }
+  p
+  {
+    text-indent: 15px;
+  }
+
+  div#prices
+  {
+    max-width:350px;
+    margin:auto;
+  }
+
+  div#terms
+  {
+    max-width:500px;
+    margin:auto;
+    ul li
+    {
+      text-align: left;
+    }
+  }
+
+  div#related-links
+  {
+    p
+    {
+      text-indent: 0;
+    }
+  }
+}
+*/

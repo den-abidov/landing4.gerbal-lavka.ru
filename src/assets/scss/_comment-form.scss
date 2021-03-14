@@ -1,0 +1,105 @@
+// стили для блока комментариев
+
+// блок комментариев
+#comments
+{
+  max-width: 550px;
+  margin: 20px auto;
+  padding-top:10px;
+
+  h5
+  {
+    a { font-weight:normal; text-decoration: underline; } /* для ссылки "Оставить отзыв" */
+  }
+  
+  p
+  {
+    text-indent:0px;
+    margin-bottom:0px;
+  }
+  
+  p.author
+  {
+    text-indent:0px;
+    text-align:right;        
+    color:grey;    
+  }
+  
+  .comment
+  {
+    background-color: #dee7e5;
+    padding:15px 10px 15px 15px;
+    border-radius:4px;
+    margin:10px 0px;          
+  }
+  
+  .reply
+  {
+    background-color: white;
+    padding:15px 10px 15px 15px;
+    border:1px solid rgb(230,230,230);
+    border-radius:4px;
+    margin-left:30px;  
+  }
+}
+
+// форма, для оставления комментария
+#comment-form
+{
+  max-width: 500px;
+  margin: auto;
+  margin-top:30px;
+  padding:20px 10px;
+  background-color:rgb(245,245,245); 
+  border-radius:5px;
+  
+  h5
+  {
+    text-align:center;
+    font-size:1.4rem;
+  }
+  img
+  {
+    width:300px;
+  }
+  
+  label
+  {
+    margin-top:15px;
+    margin-bottom:0px;
+    font-size:0.9rem;
+    color:rgb(100,100,100);
+  }
+  
+  input
+  {
+    margin-bottom:0px;
+    width:100%;
+  }
+  
+  textarea
+  {
+    height:60px;
+    width:100%;
+    margin-bottom:0px;
+  }
+  div#send-button-div
+  {
+    text-align: center;
+    margin-top:16px;
+  }
+  i
+  {
+    text-indent: 0px;
+  }
+
+  div#comment-sent-success, div#comment-sent-failure
+  {
+    div
+    {
+      max-width:240px;
+      margin:auto;
+      font-size: 0.95rem;
+    }
+  }
+}

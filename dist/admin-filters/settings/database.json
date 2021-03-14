@@ -1,0 +1,28 @@
+{
+  "use": true,
+
+  "option": "api",
+
+  "dev": {
+    "host": "localhost",
+    "user": "root",
+    "password": "helloworld",
+    "database": "services",
+    "table": "events"
+  },
+
+  "prod": {
+    "host": "localhost",
+    "user": "root",
+    "password": "u3zVLxpDeUCjhrTrdutA",
+    "database": "services",
+    "table": "events"
+  },
+
+  "api": {
+    "base_uri": "https://services.gerbal-lavka.ru/api/",
+    "request": "https://services.gerbal-lavka.ru/api/event",
+    "table": "events"
+  }
+
+}

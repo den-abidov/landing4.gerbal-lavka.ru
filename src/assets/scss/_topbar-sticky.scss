@@ -1,0 +1,29 @@
+/**
+  * Для липкого меню.
+  * См. https://get.foundation/building-blocks/blocks/topbar-sticky-shrink.html
+  */
+.topbar-sticky-shrink {
+  padding: 0rem;
+  transition: padding 0.25s ease;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  padding: 0rem;
+  transition: padding 0.25s ease;
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+/* От себя. Стиль для заставки. */
+#sticky-hero-div
+{
+  width:100%;
+  background-color: #f0f0f0;
+  div
+  {
+    max-width:500px;
+    margin:auto;
+  }
+}

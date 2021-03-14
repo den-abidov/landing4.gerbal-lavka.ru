@@ -1,0 +1,152 @@
+// Общие стили
+@import 'common';
+
+//@import "invite-to-get-pricelist";
+//@import "get-pricelist";
+
+header
+{
+  text-align: center;
+}
+
+div#categories
+{
+  width:230px;
+  margin:auto;
+
+  label
+  {
+    font-size:0.9rem;
+    text-indent:8px;
+    color:darkred;
+    margin-bottom:5px;
+  }
+}
+.catalog-card
+{
+  /* На малых экранах, 0...600 px */
+  @media screen and (max-width: 600px)
+  {
+    display:block;
+    width:300px;
+    margin:5px auto;
+  }
+
+  /* На больших экранах, >600 px */
+  @media screen and (min-width: 601px)
+  {
+    display:inline-block;
+    width:300px;
+    margin:5px;
+  }
+
+  padding:10px;
+  border:1px solid $gray9;
+  text-align: center;
+  box-shadow: 2px 2px rgb(220,220,220);
+  border-radius: 0px;
+
+  h3 /* название товара */
+  {
+    color:$gray1;
+    font-size: 1.2rem!important;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:10px;
+  }
+
+  img.product-image
+  {
+    height:250px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+
+  p
+  {
+    text-align: center;
+    text-indent: 0px;
+    font-size:0.95rem;
+  }
+
+  p.description
+  {
+    text-indent:15px;
+    text-align: left;
+    color:$gray3;
+
+    span
+    {
+      color: brown;
+    }
+  }
+
+  // перечёркнутый текст
+  span.full-price {
+    position: relative;
+    font-size: 1.2rem;
+  }
+  span.full-price:before {
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 50%;
+    right: -5px;
+    border-top: 1px solid;
+    border-color: rgba(255,0,0,0.5);
+
+    -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+  }
+  span.price
+  {
+    font-size:1.2rem;
+  }
+
+  div.prices
+  {
+    margin-bottom:20px;
+
+    p
+    {
+
+      text-align: center;
+      text-indent: 0;
+      margin-bottom: 0;
+
+      span:first-child
+      {
+        display: inline-block;
+        width:100px;
+        text-align: right;
+      }
+      span.priceSkidka
+      {
+        text-align: left;
+        font-size: 1.2rem;
+        color:darkred;
+      }
+      span:last-child
+      {
+        color:darkred;
+      }
+    }
+  }
+  #temp
+  {
+    img
+    {
+      height:250px;
+    }
+  }
+}
+
+.catalog-card:hover
+{
+  border:1px solid $gray8;
+  box-shadow: 2px 2px rgb(200,200,200);
+  background-color: rgb(245,245,245);
+}

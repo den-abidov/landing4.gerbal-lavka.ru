@@ -1,0 +1,42 @@
+a
+{
+  line-height:1.5rem;
+  padding:0.4rem 1rem;
+  color:$gray3;
+}
+
+a:hover,a:focus
+{
+  color:$gray1;
+  background-color: $gray9;
+}
+a:visited
+{
+  // color:$gray3;
+}
+a.button.success
+{
+  color:white;
+}
+
+// пара особых ссылок
+#topNav-shop
+{
+  display: inline-block;
+  margin-left:10px;
+  width:150px;
+  text-align: center;
+  font-size:1.05rem;
+}
+a#topNav-skidki
+{
+  color:orangered;
+}
+a#topNav-skidki:hover, a#topNav-skidki:focus, a#topNav-skidki:active
+{
+  color:darkred;
+}
+a#topNav-actions
+{
+  color:orange;
+}

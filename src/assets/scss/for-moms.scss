@@ -1,0 +1,10 @@
+// Общие стили
+@import 'common';
+
+@import "product-page";
+
+// переопредели размер
+#links
+{
+  max-width:300px!important;
+}

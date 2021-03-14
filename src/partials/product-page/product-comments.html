@@ -1,0 +1,119 @@
+<!-- Оставленные комментарии -->
+<span class="anchor" id="comments-anchor"></span>
+<section id="comments">
+  <h3>Отзывы покупателей</h3>
+  <p class="text-center"><a href="#comment-form-anchor" data-smooth-scroll>Оставить отзыв<i class="fas fa-pencil-alt"></i></a></p>
+
+  {{#ifpage 'product-aloe'}}   
+  {{#each comments-products.aloe }}
+    <div class={{type}}>
+      <p>{{comment}}</p>
+      <p class="author">{{by}}</p>     
+    </div>    
+  {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-formula1-night'}}   
+    {{#each comments-products.formula1-night }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-formula1'}}   
+    {{#each comments-products.formula1 }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-formula2'}}   
+    {{#each comments-products.formula2 }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-formula3'}}   
+    {{#each comments-products.formula3 }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-kpv'}}   
+  {{#each comments-products.kpv }}
+    <div class={{type}}>
+      <p>{{comment}}</p>
+      <p class="author">{{by}}</p>     
+    </div>    
+  {{/each}}
+  {{/ifpage}}
+  
+  {{#ifpage 'product-oyan'}}   
+    {{#each comments-products.oyan }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-tea'}}   
+    {{#each comments-products.tea }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-Termokomplit'}}   
+    {{#each comments-products.Termokomplit }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}  
+
+  {{#ifpage 'product-turbo-drink'}}   
+    {{#each comments-products.turbo-drink }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-yellow-pills'}}   
+    {{#each comments-products.yellow-pills }}
+      <div class={{type}}>
+        <p>{{comment}}</p>
+        <p class="author">{{by}}</p>     
+      </div>    
+    {{/each}}
+  {{/ifpage}}
+
+  {{#ifpage 'product-protein-coffee'}}
+  {{#each comments-products.protein-coffee }}
+  <div class={{type}}>
+    <p>{{comment}}</p>
+    <p class="author">{{by}}</p>
+  </div>
+  {{/each}}
+  {{/ifpage}}
+</section>
+    
+<!-- Форма оставить комментарий -->
+<span class="anchor" id="comment-form-anchor"></span>
+{{> comment-form }}
+<br/>

@@ -1,0 +1,47 @@
+<div id="get-pricelist">
+
+  <div id="form">
+
+    <table>
+      <tbody>
+      <tr>
+        <td><img src="assets/img/email.svg"></td>
+        <td>Получите полный каталог с ценами себе на почту</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <div x-data="getPricelistFormProps()">
+
+      <label>Ваша почта</label>
+      <input type="email" id="user-email" :class="{ 'is-invalid-input': emailError }" x-on:click="removeErrorMessages()" x-model="email">
+      <div class="callout danger" x-show="emailError">Укажите Вашу почту</div>
+      <div class="spacer-10px"></div>
+      <div class="text-center"><button  id="send-email" class="button success" x-show="sendVisible" x-on:click="whenSendPressed()" x-bind:disabled="errorVisible">Отправить</button></div>
+
+      <p id="sending-email" class="text-center" x-show="sendingVisible">Отправляем каталог&nbsp;&nbsp;<i class="fas fa-spinner fa-pulse"></i></p>
+
+      <div id="email-sent-success" class="callout success" x-show="successVisible">
+        Каталог успешно отправлен<br/>
+        Вам на электронную почту <i class="fas fa-check"></i>
+      </div>
+
+      <div id="email-sent-failure" class="callout danger" x-show="failureVisible">
+        Техническая ошибка &#129300;<br/>
+        Попробуйте ещё раз позже.
+      </div>
+
+    </div><!-- end of x-data -->
+
+    <table>
+      <tbody>
+      <tr>
+        <td><img src="assets/img/pdf.svg"></td>
+        <td>Или просто скачайте на своё устройство <a target="_blank" href="assets/pdf/каталог Гербалайф.pdf" onclick="logEvent('скачан прайслист')"><u>Скачать</u></a></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div><!-- end of form -->
+</div><!-- end of get-pricelist -->

@@ -1,0 +1,10 @@
+@import "common";
+@import "_buy-options.scss";
+
+// Для встроенного видео
+div#videoWrapper
+{
+  max-width:600px;
+  margin:auto;
+  text-align: center;
+}

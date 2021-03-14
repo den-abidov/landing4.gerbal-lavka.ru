@@ -1,0 +1,30 @@
+div#shopPromo
+{
+
+  max-width:470px;
+  margin:auto;
+
+  img
+  {
+    width:80%;
+  }
+  p
+  {
+    margin-bottom: 1rem;
+    span:first-child
+    {
+      color:$green_darker;
+    }
+  }
+
+  div#prices
+  {
+    max-width:300px;
+    margin:auto;
+  }
+
+  a, button
+  {
+    width: 240px;
+  }
+}

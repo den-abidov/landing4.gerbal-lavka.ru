@@ -1,0 +1,7 @@
+AddType application/x-httpd-php | .htm .html
+# Часть 1a обработка PHP-скриптов внутри .html страниц : для LOCALHOST
+# AddType application/x-httpd-php .php .htm .html
+
+# ----------------------------------------------------------------------
+# Часть 1b. обработка PHP-скриптов внутри .html страниц
+# AddHandler application/x-httpd-lsphp .htm .html

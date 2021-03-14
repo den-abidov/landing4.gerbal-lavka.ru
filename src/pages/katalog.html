@@ -1,0 +1,90 @@
+---
+
+pageName: katalog
+title: Гербалайф | Herbalife — Каталог Продукции 2021
+description: Каталог продукции Гербалайф 2021 с описанием и ценами
+keywords: каталог Гербалайф, продукция Гербалайф, цены Гербалайф, прайслист Гербалайф
+
+---
+
+{{!-- > disclaimer-bads --}}
+
+<div class="spacer-2px"></div>
+
+{{!-- > invite-to-get-pricelist --}}
+
+<header>
+  <h1>Каталог</h1>
+</header>
+
+<main class="has-side-padding" x-data="{ selectedOption: 'all'}">
+  <!-- Меню категорий -->
+  <!-- ВАЖНО : Значения опций должны совпадать с тэгами в data/katalog.yml -->
+  <div id="categories">
+    <label>Категории товаров</label>
+    <select x-model="selectedOption">
+      <option value="all">Показать всё</option>
+      <option value="popular">Популярные товары</option>
+      <option value="set">Программы похудения</option>
+      <option value="none" disabled>--------------------------</option>
+      <option value="breakfast">Завтрак</option>
+      <option value="snack">Перекус</option>
+      <option value="dinner">Ужин</option>
+      <option value="none" disabled>--------------------------</option>
+      <option value="weightloss">Похудение</option>
+      <option value="cleanse">Очищение</option>
+      <option value="energy">Энергия</option>
+      <option value="heart">Сердце</option>
+      <option value="immune">Иммунитет</option>
+      <option value="digestion">Пищеварение</option>
+      <option value="cosmetics">Внешний уход</option>
+      <option value="sport">Спорт</option>
+    </select>
+  </div>
+
+  <!-- Товарные карточки -->
+  <div id="catalog">
+    {{#each katalog.product}}
+    <div class="catalog-card" x-show="'{{ tags }}'.includes(selectedOption)">
+      <div class="text-center"><img class="product-image" loading="lazy" src="assets/img/product/{{imageFile}}"></div>
+      <h3>{{{ name }}}</h3>
+      <p class="description">{{{description}}}</p>
+      {{#if url}}
+        <p>
+          <a href="{{url}}">Подробнее...<!-- i class="far fa-file-alt"></i--></a>
+          {{#if hasComments}}
+            &nbsp;&nbsp;&nbsp;<a href="{{url}}#comments">Отзывы <i class="far fa-comment-dots"></i></a>
+          {{/if}}
+        </p>
+      {{/if}}
+      <!-- p><span class="full-price">{{priceMinus25}}</span>&nbsp;&nbsp;&nbsp;<span class="price">{{priceMinus35}}</span> руб.</p -->
+      <div class="prices">
+        {{#if card }}
+          <div><span class="full-price">{{price100}}</span> руб. или БЕСПЛАТНО</div>
+        {{else}}
+          <p><span>без скидки :</span> <span class="full-price">{{ price100 }}</span> <span style="color:black;">руб.</span></p>
+          <p><span>со скидкой :</span> <span class="priceSkidka">{{ priceMinus25 }}</span> <span>руб.</span></p>
+          <p><span>по карте :</span> <span class="priceSkidka">{{ priceMinus35 }}</span> <span>руб.</span></p>
+        {{/if}}
+      </div>
+      <div class="text-center"><a href="#anchor-shop-invite" class="button success">Хочу купить <i class="fas fa-chevron-right"></i></a></div>
+    </div>
+    {{/each}}
+
+  </div>
+
+
+
+  <br/>
+  <span class="anchor" id="anchor-shop-invite"></span>
+  <br/>
+  {{!-- > shop-invite --}}
+  {{> callback-invite}}
+</main>
+
+<br/>
+
+{{> disclaimer-bads }}
+<br/>
+<span class="anchor" id="anchor-get-pricelist"></span>
+{{!-- > get-pricelist --}}

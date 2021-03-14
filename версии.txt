@@ -1,0 +1,39 @@
+2021.03.15 main
+Новый проект на основе landing-buy.gerbal-lavka.ru
+Инструменты : Gulp, Panini, Zurb Foundation, jQuery, Alpine JS.
+
+Изменил условия скидки : 25% скидка сразу при заказе до 100 очков.
+При наборе от 100 очков - сразу скидка 35%.
+Также есть возможность купить карту клиенту со скидкой 35% за 5 тыс. руб.
+или получить бесплатно за набранные 200 очков, и совершать с ней заказы
+за любые очки.
+
+Не забывай проверять настройки сайта в
+    settings.js
+    {{> GTM-to-head }}
+    {{> GTM-to-body }}
+    dist/robots.txt
+    dist/sitemap.txt
+
+
+---
+Присоединить remote url к сайту :
+git remote set-url origin new_url
+
+Присоединяю удалённый репозиторий :
+git remote add origin url_репозитория_на_github
+
+Проверяю
+git remote -v
+
+Отправляю в удалённый репозиторий ВСЕ ветки:
+git push --all origin
+
+Чтобы для сайта, убрать заставку после отправки запроса на обратный звонок :
+localStorage.setItem("requestSubmitted", false);
+
+Локальная разработка :
+git add . && git commit -m "фикс" && git checkout -b b1
+
+На продакшн :
+gulp build && git add . && git commit -m "production build" && git push origin b2 && ~/update-master.sh b2

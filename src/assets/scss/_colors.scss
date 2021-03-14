@@ -1,0 +1,28 @@
+// Подбор цветов здесь : https://www.color-hex.com/color/80bb27
+
+// цвета
+$green: #80bb27; //rgb(128,187,39)
+$green_lighter: #8ed02b;
+$green_darker: #669932;
+$green_hover: $green_darker;
+
+$gray1:rgb(50,50,50);
+$gray2:rgb(75,75,75);
+$gray3:rgb(100,100,100);
+$gray4:rgb(125,125,125);
+$gray5:rgb(150,150,150);
+$gray6:rgb(175,175,175);
+$gray7:rgb(200,200,200);
+$gray8:rgb(225,225,225);
+$gray9:rgb(240,240,240);
+
+
+// назначение цветов элементам
+$font_color: $gray1;
+$theme_color: $green;
+$heading_color: $green_darker;
+$title_color: $gray3;//$font_color;//$green_darker;
+$fade_color: $gray4;
+
+$hyperlink_color:rgb(20,103,158);
+$placeholder_color: $gray5;

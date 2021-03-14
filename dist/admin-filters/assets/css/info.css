@@ -1,0 +1,5 @@
+main .table-wrap {
+  max-width: 500px;
+  margin: auto; }
+  main .table-wrap table tr td:first-child {
+    width: 200px; }

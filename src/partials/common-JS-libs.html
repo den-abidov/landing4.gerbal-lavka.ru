@@ -1,0 +1,41 @@
+<!--Зависимости-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script -->
+<!-- script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script -->
+<script src="assets/js/foundation.min.js"></script>
+<script>$(document).foundation();</script>
+
+<script src="assets/js/close-banner.js" inline></script>
+<script src="assets/js/settings.js" inline></script>
+<script src="assets/js/get-device-id.js" inline></script>
+<script src="assets/js/utility.js" inline></script>
+<script src="assets/js/get-from-LS.js" inline></script>
+<script src="assets/js/get-ip-data.js" inline></script>
+<script src="assets/js/log-event.js" inline></script>
+
+  <!-- script src="assets/js/callback-modal.js" inline></script -->
+<!-- для обратного звонка -->
+<!-- script src="{{root}}assets/js/registration-request.js" inline></script -->
+<script src="assets/js/page-info.js" inline></script>
+<script src="{{root}}assets/js/callback-request.js" inline></script>
+<script src="{{root}}assets/js/callback-form.js" inline></script>
+<!---->
+
+{{#ifpage 'main' 'actions'}}
+  <!-- script src="assets/js/phone-coupon.js" inline></script -->
+{{/ifpage }}
+
+{{#ifpage 'results'}}
+<script src="{{root}}assets/js/showMoreOrLess.js" inline></script>
+{{/ifpage}}
+
+{{!--
+Нужно для формы оставить комментарий partial\comment-form.html,
+которая используется на странице отзывов покупателей и на продуктовых страницах
+--}}
+<script src="assets/js/comment-form.js" inline></script>
+
+
+{{#ifpage 'katalog' 'terms' }}
+  <!-- script src="{{root}}assets/js/get-pricelist-form.js" inline></script -->
+{{/ifpage}}

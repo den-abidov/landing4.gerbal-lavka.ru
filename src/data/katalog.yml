@@ -1,0 +1,380 @@
+product:
+# ВАЖНО! Для товаров используются тэги :
+# all popular set breakfast snack dinner weightloss cleanse energy heart immune digestion cosmetics sport
+# Эти тэги присваиваются как опции в select menu на странице katalog.html
+  - tags: all popular breakfast dinner weightloss
+    name: карта Клиента
+    description: Даёт повышенную <b>накопительную</b> скидку. Карту можно купить за 5 тыс. руб. или получить <b>бесплатно</b> набрав 100 очков за 1 или 2 покупки. Чтобы получить 100 очков закажите продукцию со скидкой 25% на 7-8 тыс. руб.
+    imageFile: card-present-5000.svg
+    price100: 5000
+    priceMinus25: 0
+    priceMinus35: 0
+    url: skidki.html
+    hasComments:
+    card: true
+
+  - tags: all popular breakfast dinner weightloss
+    name: коктейль Формула 1
+    description: Основной продукт для снижения и контроля веса. Богат витаминами, минералами, клетчаткой, белком. Имеет сбалансированный состав и приятный вкус. Вес - 550 г, 21 порция. <span>Вкусы - шоколад, шоколадное печенье, клубника, дыня, маракуйя, пина-колада, крем-брюле, ваниль, капучино.</span>
+    imageFile: formula1-flavors.webp
+    price100: 2370
+    priceMinus25: 1830
+    priceMinus35: 1620
+    url: product-formula1.html
+    hasComments: true
+
+  - tags: all popular snack dinner weightloss
+    name: протеиновый коктейль<br/>куриный крем-суп
+    description: Используется как перекус, лёгкий обед (желательно с салатом) или лёгкий ужин. Отлично сбалансирован по составу. Вес - 432 г, 16 порций.
+    imageFile: formula1-chicken.webp
+    price100: 2370
+    priceMinus25: 1830
+    priceMinus35: 1620
+    url:
+
+  - tags: all popular snack weightloss sport
+    name: протеиновый кофе<br/>Латте Макиато
+    description: Отличный вариант быстрого и полезного перекуса. Вкус сливочный, но с крепким кофейным ароматом. Низкокалорийный, богат белком, имеет сбалансированный состав. Без сахара и искусственных красителей. Вес - 308 г, 14 порций.
+    imageFile: protein-coffee.webp
+    price100: 2370
+    priceMinus25: 1910
+    priceMinus35: 1730
+    url: product-protein-coffee.html
+    hasComments: true
+
+  - tags: all popular dinner weightloss
+    name: коктейль Формула 1<br/>вечерний
+    description: Используется как легкий ужин или перекус в вечернее время. Состав идентичен обычному коктейлю Формула 1. Дополнительно содержит компоненты для крепкого здорового сна. Вкус - невыраженный, нежный, приятный. Вес - 416 г, 16 порций.
+    imageFile: formula1-night.webp
+    price100: 1992
+    priceMinus25: 1540
+    priceMinus35: 1360
+    url: product-formula1-night.html
+    hasComments: true
+
+  - tags: all snack dinner weightloss
+    name: томатный суп<br/>с базиликом
+    description: Идеально подходит для обеда, ужина или перекуса. Быстро готовится. Сбалансирован по составу. Источник белка, клетчатки и пребиотиков. Вес - 672 г, 21 порция.
+    imageFile: tomato-soup.webp
+    price100: 2370
+    priceMinus25: 1830
+    priceMinus35: 1620
+    url:
+    hasComments:
+
+  - tags: all breakfast dinner weightloss
+    name: коктейль Формула 1<br/>дыня, 2 кг
+    description: Экономичная большая упаковка. Такой формат выпускается только со вкусом дыни. Вес - 2.08 кг, 80 порций.
+    imageFile: formula1-melon-2kg.webp
+    price100: 8673
+    priceMinus25: 6730
+    priceMinus35: 5950
+    url:
+
+  - tags: all breakfast snack weightloss
+    name: коктейль Формула 1<br/>ваниль, 7 саше
+    description: Коктейль расфасованный в пакетики (саше). 1 пакетик = 1 порция. Удобно, если нужно брать с собой на работу или в поездки.
+    imageFile: formula1-vanil-sachet.webp
+    price100: 908
+    priceMinus25: 700
+    priceMinus35: 620
+    url:
+
+  - tags: all popular breakfast dinner weightloss
+    name: протеиновая смесь<br/>Формула 3 (белок)
+    description: Дополнительный источник белка. Даёт чувство сытости, делает кожу упругой, а мыщци - крепкими и эластичными. Добавлять в коктейли и блюда. Вес - 240 г, 40 порций.
+    imageFile: formula3.webp
+    price100: 2020
+    priceMinus25: 1560
+    priceMinus35: 1380
+    url: product-formula3.html
+    hasComments: true
+
+  - tags: all popular breakfast energy weightloss
+    name: травяной напиток, 50 г
+    description: Эффективно тонизирует, бодрит. Способствует снижению веса. Источник антиоксидантов для защиты организма. Состоит из 6 растений. ½ или 1 чайную ложку смешать в стакане воды, выпить. Вес - 50 г, 60 порций. Хватает на 1-2 месяца. <span>Вкусы - классический, лимон, малина.</span>
+    imageFile: tea-flavors.webp
+    price100: 1717
+    priceMinus25: 1330
+    priceMinus35: 1170
+    url: product-tea.html
+    hasComments: true
+
+  - tags: all breakfast energy weightloss
+    name: травяной напиток, 100 г<br/>классический
+    description: В 2 раза больше травяного напитка за меньшие деньги. Большая баночка выпускается только с классическим вкусом. Вес - 100 г, 120 порций. Хватает на 2-4 месяца.
+    imageFile: tea-classic-100g.webp
+    price100: 3206
+    priceMinus25: 2480
+    priceMinus35: 2190
+    url: product-tea.html
+
+  - tags: all popular breakfast weightloss cleanse digestion
+    name: Гербал Алоэ, 473 мл<br/>растительный напиток
+    description: Поддерживает пищеварительную систему, полезную микрофлору кишечника. Очищает организм, улучшает состояние кожи. Содержит ~200 полезных активных веществ. Смешать от 1 до 3х колпачков в стакане воды, выпить. Бутылочки хватает на 1-3 месяца. <span>Вкусы - классический, клюква, манго.</span>
+    imageFile: aloe-flavors.webp
+    price100: 2148
+    priceMinus25: 1660
+    priceMinus35: 1470
+    url: product-aloe.html
+    hasComments: true
+
+  - tags: all popular cleanse digestion
+    name: овсяно-яблочный напиток
+    description: Содержит растворимые и нерастворимые пищевые волокна (клетчатку). Поддерживает функцию естественного очищения кишечника. Помогает в формировании полезной микрофлоры кишщечника. Имеет нежный яблочный вкус. Мерная ложка внутри банки. Вес - 213 г, 35 порций.
+    imageFile: oyan.webp
+    price100: 2072
+    priceMinus25: 1600
+    priceMinus35: 1420
+    url: product-oyan.html
+    hasComments: true
+
+  - tags: all cleanse digestion
+    name: комплекс пищевых волокон
+    description: Обеспечивает суточную потребность в растворимых пищевых волокнах (пребиотиках) для формирования полезной микрофлоры. Не имеет вкуса. Мерная ложка внутри банки. Вес - 210 г, 41 порция.
+    imageFile: kpv.webp
+    price100: 2072
+    priceMinus25: 1600
+    priceMinus35: 1420
+    url: product-kpv.html
+    hasComments: true
+
+  - tags: all popular snack weightloss
+    name: батончики Формула 1 экспресс
+    description: В каждом батончике полноценная порция коктейля Формула 1. Отлично подходит как сбалансированный приём пищи или перекус. На вкус - сладкий. Вес батончика - 56 г. В упаковке - 7 шт.
+    imageFile: formula1-express.webp
+    price100: 1132
+    priceMinus25: 870
+    priceMinus35: 770
+    url:
+    hasComments:
+
+  - tags: all popular snack weightloss
+    name: протеиновые батончики
+    description: Используйте как сбалансированный перекус. Содержит мало калорий, при этом богат белком. Вес батончика - 35 г. В упаковке - 14 шт. <span>Вкусы - шоколад-арахис, ваниль-миндаль, лимон.</span>
+    imageFile: protein-bars-flavors.webp
+    price100: 1273
+    priceMinus25: 1120
+    priceMinus35: 1060
+    url:
+    hasComments:
+
+  - tags: all popular snack weightloss
+    name: протеиновые мини-батончики
+    description: Полезная альтернатива высококалорийным десертам. Прекрасный выбор для полдника и чаепития после обеда или ужина. Вес батончика - 15 г. В упаковке - 28 шт. <span>Вкусы - ваниль, лимон.</span>
+    imageFile: mini-bars-lemon.webp
+    price100: 1528
+    priceMinus25: 1340
+    priceMinus35: 1270
+    url:
+    hasComments:
+
+  - tags: all weightloss immune
+    name: витамино-минеральный<br/>комплекс Формула 2
+    description: Обеспечивает организм оптимальным количеством витаминов и минералов (24 именования), включая те, которые организм не способен выработать самостоятельно или в достаточном количестве. Принимать по 1 таблетке 2 раза в день во время еды. Баночки хватает на 1 месяц. <span>Виды - для женщин и для мужчин.</span>
+    imageFile: formula2-flavors.webp
+    price100: 1522
+    priceMinus25: 1180
+    priceMinus35: 1040
+    url: product-formula2.html
+    hasComments: true
+
+  - tags: all immune
+    name: Иммьюн Бустер, 10 саше
+    description: Повышает иммунитет. Содержит эксклюзивную натуральную добавку EPICOR, а также цинк, селен, витамины C и D3 для дополнительной защиты организма.
+    imageFile: immune-booster.webp
+    price100: 937
+    priceMinus25: 720
+    priceMinus35: 640
+    url:
+    hasComments:
+
+  - tags: all immune
+    name: Шизандра
+    description: Защищает организм от свободных радикалов. Обладает мощным антиоксидантным эффектом. Источник витаминов B6, С, E и селена. Принимать по 1 таблетке 2 раза в день во время еды. В баночке 60 таблеток. Хватает на 1 месяц.
+    imageFile: shizandra.webp
+    price100: 1421
+    priceMinus25: 1100
+    priceMinus35: 970
+    url:
+    hasComments:
+
+  - tags: all immune
+    name: Роузгард
+    description: Замедляет старение клеток. Защищает нервные клетки. Содержит экстракт розмарина - мощный антиоксидант, а также вытяжку из брокколи, корня куркумы, моркови и капусты. Принимать по 1 таблетке 2 раза в день во время еды. В баночке 60 таблеток. Хватает на 1 месяц.
+    imageFile: rouzgard.webp
+    price100: 1969
+    priceMinus25: 1520
+    priceMinus35: 1340
+    url:
+    hasComments:
+
+  - tags: all popular weightloss
+    name: жёлтые таблетки
+    description: Снижает тягу к сладкому и мучному, помогает контролировать аппетит и стимулирует сжигание жира. Источник хрома и гидроксилимонной кислоты из гарцинии. Принимать по 1 таблетке 1 раз в день во время еды. В баночке 60 таблеток, хватает на 2 месяца.
+    imageFile: yellow-pills.webp
+    price100: 1653
+    priceMinus25: 1280
+    priceMinus35: 1130
+    url:
+    hasComments:
+
+  - tags: all popular weightloss
+    name: Термо Комплит
+    description: Биодобавка из 7 растений. Для ускорения снижения веса. Стимулирует метаболизм, поднимает тонус, снижает уровень сахара в крови. Принимать по 1 таблетке в день во время еды. В баночке 90 таблеток, хватает на 3 месяца.
+    imageFile: termokomplit.webp
+    price100: 2797
+    priceMinus25: 2160
+    priceMinus35: 1910
+    url:
+    hasComments:
+
+  - tags: all cleanse
+    name: Целл-у-лосс
+    description: Выводит лишнюю жидкость. Контролирует внутриклеточный водный баланс. Регулирует содержание в организме солей, щелочей и кислот. Принимать по 1 таблетке 4 раза в день во время еды. В баночке 120 таблеток, хватит на 1 месяц.
+    imageFile: cell-u-loss.webp
+    price100: 1600
+    priceMinus25: 1240
+    priceMinus35: 1090
+    url:
+    hasComments:
+
+  - tags: all energy weightloss
+    name: клеточный активатор
+    description: Уникальная формула помогает организму эффективно преобразовывать жиры в энергию и усваивать поступающие нутриенты. Содержит L-карнитин, витамины В1, В2, В6, алоэ. Принимать по 1 капсуле 3 раза в день во время еды. В баночке 90 капсул, хватает на 1 месяц.
+    imageFile: cell-activator.webp
+    price100: 1990
+    priceMinus25: 1540
+    priceMinus35: 1360
+    url:
+    hasComments:
+
+  - tags: all cleanse
+    name: Тан Куай
+    description: Разработан специально для женщин. Способствует расслаблению мышц, снимает дискомфорт и болезненные ощущения. Принимать по 1 таблетке 3 раза в день во время еды. В баночке 60 таблеток.
+    imageFile: tan-kuay.webp
+    price100: 1322
+    priceMinus25: 1020
+    priceMinus35: 900
+    url:
+    hasComments:
+
+  - tags: all popular immune
+    name: Экстра-Каль
+    description: Укрепляет костную ткань, ногти и волосы. Источник кальция высокой усвояемости и витамина D. Три таблетки в день обеспечивают 100% суточную потребность организма в кальции. Принимать по 1 таблетке 2-3 раза в день во время еды. В баночке 60 таблеток, хватит на 1 месяц.
+    imageFile: extra-cal.webp
+    price100: 930
+    priceMinus25: 720
+    priceMinus35: 630
+    url:
+    hasComments:
+
+  - tags: all heart immune
+    name: Гербалайфлайн Макс
+    description: Поддерживает сердечно-сосудистую систему, зрение и работу головного мозга. Новая улучшенная формула. Не оставляет послевкусия рыбьего жира. Содержит полиненасыщенные жирные кислоты ОМЕГА-3 из ценных пород морских рыб. Принимать по 1 капсуле в день во время еды. В упаковке 30 капсул, хватает на 1 месяц.
+    imageFile: herbalifeline-max.webp
+    price100: 1919
+    priceMinus25: 1480
+    priceMinus35: 1310
+    url:
+    hasComments:
+
+  - tags: all heart immune
+    name: Найтворкс
+    description: Содержит аминокислоты для выработки организмом оксида азота. Улучшает работу сердца и сосудов. Очень хорошо влияет на работу головного мозга. Повышает силу и выносливость. Принимать 1 раз в день вечером во время еды. Смешать 2 мерные ложки (ложка прилагается) со стаканом молока, сока, или воды. Баночки хватает на 1 месяц.
+    imageFile: niteworks.webp
+    price100: 5455
+    priceMinus25: 4280
+    priceMinus35: 3810
+    url:
+    hasComments:
+
+  - tags: all energy weightloss
+    name: чай NRG
+    description: Заряжает энергией, поднимает тонус. Содержит натуральную гуарану, кофеин, зелёный чай. Добавить ½ чайной ложки в стакан воды, выпить. Принимать 1 - 3 раза в день. В баночке 60 г, хватает на 1 месяц.
+    imageFile: nrg-tea.webp
+    price100: 1255
+    priceMinus25: 970
+    priceMinus35: 860
+    url:
+    hasComments:
+
+  - tags: all energy weightloss
+    name: таблетки NRG
+    description: Чай NRG в виде таблеток. Растворить таблетку в стакане воды, выпить. Принимать 1 - 3 раза в день. В баночке 60 таблеток, хватает на 1 месяц.
+    imageFile: nrg-pills.webp
+    price100: 1245
+    priceMinus25: 960
+    priceMinus35: 850
+    url:
+    hasComments:
+
+  - tags: all popular weightloss set
+    name: затраки Гербалайф<br/>на 3 дня
+    description: Набор расчитан на 3 дня для ознакомления со вкусом коктейля, нежели на получение значимого результата. В наборе 3 саше с коктейлем Формула 1 ваниль и 1 саше с травяным напитком классический. Вы заменяете свои обычные завтраки, продуктами из этого набора.
+    imageFile: program-test.webp
+    price100: 593
+    priceMinus25: 460
+    priceMinus35: 400
+    url:
+    hasComments:
+
+  - tags: all popular weightloss set
+    name: Базовая программа<br/>снижения веса
+    description: "Готовые завтраки Гербалайф на 6 недель. Состав: 2 банки коктейля, 1 Алоэ и 1 травяной напиток. Вкусы - на выбор. Брать набор выгоднее, чем покупать продукты по отдельности."
+    imageFile: program-base.webp
+    price100: 8603
+    priceMinus25: 6660
+    priceMinus35: 5890
+    url: programs.html#program-base-anchor
+    hasComments:
+
+  - tags: all popular weightloss set
+    name: Расширенная программа<br/>снижения веса
+    description: "Как Базовая программа + ещё 1 коктейль и 2 белка. Готовые завтраки и ужины Гербалайф на 1 месяц. Если только завтракать - то на 2 месяца. Состав : 3 банки коктейля, 1 Алоэ, 1 травяной напиток, 2 белка. Вкусы - на выбор. Брать набор выгоднее, чем покупать продукты по отдельности."
+    imageFile: program-advanced.webp
+    price100: 15012
+    priceMinus25: 11630
+    priceMinus35: 10280
+    url: programs.html#program-advanced-anchor
+    hasComments:
+
+  - tags: all popular weightloss set
+    name: Максимальная программа<br/>снижения веса
+    description: "Как Расширенная программа + 3 биодобавки для более эффективного снижения веса: Термокомплит, овсяно-яблочный напиток и комплекс Формула 2. Также расчитана на 1 или 2 месяца. Вкусы компонентов - на выбор. Брать набор выгоднее, чем покупать продукты по отдельности."
+    imageFile: program-maximum.webp
+    price100: 21402
+    priceMinus25: 16580
+    priceMinus35: 14650
+    url: programs.html#program-maximum-anchor
+    hasComments:
+
+  - tags: all sport
+    name: спортивный коктейль<br/>«Восстановление силы»
+    description: Источник белка и аминокислот для эффективного восстановления после тренировок. Способствует росту мыщц, насыщает ткани кислородом. Принимать после тренировки. Вес - 1000 г, 20 порций.
+    imageFile: herbalife24-rebuild.webp
+    price100: 3214
+    priceMinus25: 2580
+    priceMinus35: 2330
+    url:
+    hasComments:
+
+  - tags: all sport
+    name: спортивный напиток СиАр 7
+    description: Освежает. Восстанавливает водный баланс за счет комплекса электролитов. Поддерживает выносливость, способствует метаболизму. Принимать до и после тренировок. Вес - 540 г, 40 порций.
+    imageFile: cr7.webp
+    price100: 1424
+    priceMinus25: 1130
+    priceMinus35: 1020
+    url:
+    hasComments:
+
+  - tags: all sport immune
+    name: напиток Лифтофф
+    description: Улучшает умственную и физическую работоспособность. Поддерживает тонус, улучшает концентрацию внимания. Обогащен витаминами С и В3. Содержит в 10 раз меньше калорий, чем в других популярных энергетиках. В упаковке 10 саше.
+    imageFile: liftoff-flavors.webp
+    price100: 1614
+    priceMinus25: 1250
+    priceMinus35: 1100
+    url:
+    hasComments:

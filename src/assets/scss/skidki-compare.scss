@@ -1,0 +1,26 @@
+// Общие стили
+@import 'common';
+
+header
+{
+  text-align: center;
+  img
+  {
+    width:80px;
+    vertical-align: text-bottom;
+  }
+}
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding:20px 10px;
+
+  table#discounts
+  {
+    max-width:360px;
+    margin:auto;
+  }
+}
+

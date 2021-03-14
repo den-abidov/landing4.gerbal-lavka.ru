@@ -1,0 +1,26 @@
+#to-top//для стрелки вверх
+{
+    width:50px;
+    //padding:10px 0px;
+    border-radius: 5px;
+    //background-color: rgba(128,187,39,0.1);
+    text-align: center;
+
+    position:fixed;
+    // bottom:50%; /* разместить посередине */
+    bottom:5px;
+    right:0px;
+    z-index:5;
+    a
+    {
+        color:#80bb27;
+        font-size:2rem;
+        font-weight:bold;
+        text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    }
+    img
+    {
+        width:30px;
+        opacity: 0.75;
+    }
+}

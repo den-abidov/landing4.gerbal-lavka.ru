@@ -1,0 +1,34 @@
+div#banner-skidka
+{
+  padding:1rem;
+  text-align: center;
+  background-color: orangered;
+  h1, h2, h3
+  {
+    color:white;
+    margin-bottom: 10px;
+  }
+  p, a
+  {
+    margin-bottom:0px;
+  }
+
+  .button.warning
+  {
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+  }
+  .button.warning:hover
+  {
+    background-color: orange;
+    border:1px solid orange;
+  }
+
+  .button.warning[disabled], .button.warning[disabled]:hover
+  {
+    background-color: orange;
+    border:1px solid orange;
+  }
+
+}

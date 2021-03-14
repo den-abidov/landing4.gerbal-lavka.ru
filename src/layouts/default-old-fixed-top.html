@@ -1,0 +1,72 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+{{!-- > start-session --}}
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">       
+    {{!-- > GTM-to-head --}}
+
+    <!-- Foundation CSS >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" -->
+
+    <!-- FontAwesome >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" / -->
+
+    <!--This page specific CSS-->
+    <link rel="stylesheet" href="{{root}}assets/css/{{pageName}}.css" inline>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="{{root}}assets/img/favicon.png">
+  </head>
+  <body>
+    
+    {{!-- > GTM-to-body --}}
+
+    {{!-- включи в рабочем режиме --}}
+    {{!-- > loading --}}
+
+    <!-- ?php include_once "admin-filters/assets/php/redirecter.php"; ? -->
+    
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+    {{!-- чтобы показывать на малых/больших экранах, используй visibility классы Zurb Foundation : show-for-small-only, etc. --}}
+
+    {{> off-canvas-sidebar}}
+
+    <div class="off-canvas-content" data-off-canvas-content>
+          <!-- для стрелки вверх-->
+          <div id="top"></div>
+          {{> topNav }}
+          {{> body }}
+          {{> footer }}
+          {{> to-top }}
+    </div>
+    
+    {{> callback-modal}}
+    {{> politics-modal}}
+    {{> shop-promo-modal}}
+
+    {{> common-JS-libs}}
+
+    <script src="{{root}}assets/js/{{pageName}}.js" inline></script>
+      
+    {{!-- LD-JSON markup now placed directly on relevant pages --}}
+
+    {{!-- Вставь позже --}}
+
+    {{!-- > admin-filters --}}
+
+    {{!-- включи в рабочем режиме --}}
+    {{!-- > filtering --}}
+
+    {{!-- > JivoSite --}}
+  </body>
+</html>

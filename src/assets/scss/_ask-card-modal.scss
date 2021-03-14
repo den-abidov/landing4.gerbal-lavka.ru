@@ -1,0 +1,42 @@
+div#askCardModal
+{
+    max-width:340px!important;
+    margin:auto!important;
+    height:auto!important;
+    min-height:auto!important;
+    text-align:center;
+
+    div#askCardForm
+    {
+        width: 240px;
+        margin:auto;
+
+        img{ width:150px;}
+
+        label
+        {
+            text-align: center;
+            font-size: 1rem;
+            color:$gray3;
+        }
+
+        input#cardNumber
+        {
+            width:200px;
+            margin:auto;
+            text-align: center;
+            font-size:1.4rem;
+        }
+        button#check
+        {
+            font-size: 1rem!important;
+        }
+    }
+
+    .close-modal-link
+    {
+        text-align:center;
+        margin-top:0px;
+        margin-bottom:0;
+    }
+}

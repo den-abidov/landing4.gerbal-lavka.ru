@@ -1,0 +1,17 @@
+// Общие стили
+@import 'common';
+
+@import "product-comments";
+@import "product-page";
+
+// переопредели размер
+#links
+{
+  max-width:300px!important;
+}
+
+#diary-example
+{
+  text-align: center;
+  margin-bottom:20px;
+}

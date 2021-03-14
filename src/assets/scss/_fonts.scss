@@ -1,0 +1,20 @@
+// get fonts
+@font-face {
+    font-family: "Nunito";
+    src: url("/assets/fonts/Nunito/Nunito-Regular.eot");
+    src: url("/assets/fonts/Nunito/Nunito-Regular.eot?#iefix") format('embedded-opentype'),
+    url("/assets/fonts/Nunito/Nunito-Regular.woff2") format('woff2'),
+    url("/assets/fonts/Nunito/Nunito-Regular.woff") format('woff'),
+    url("/assets/fonts/Nunito/Nunito-Regular.ttf") format('truetype');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+// apply fonts
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, button, label, div, section, legend
+{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

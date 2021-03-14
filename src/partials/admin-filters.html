@@ -1,0 +1,10 @@
+<!-- Подключаю admin-filters, чтобы  проверить id-устройства -->
+<script src="admin-filters/assets/js/get-device-id.js" inline></script>
+<script src="admin-filters/assets/js/check-device-id.js" inline></script>
+
+<?php
+    // включение фильтрации на сайте :
+    // проверка размера устройства, ip в запрещённом ли списке, откуда ip
+    $path_to_route = "admin-filters/assets/php/route.php";
+    include_once($path_to_route);
+?>

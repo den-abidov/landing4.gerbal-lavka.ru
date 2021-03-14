@@ -1,0 +1,40 @@
+---
+
+pageName: comments
+title: Гербалайф | Herbalife — Отзывы покупателей продукции Гербалайф
+description: Что говорят о работе с нами покупатели продукции Гербалайф
+keywords: Гербалайф, отзывы Гербалайф, отзывы на Гербалайф, отзывы реальных покупателей Гербалайф
+
+---
+
+{{!--> disclaimer-individuality --}}
+
+<header>
+  <br/>
+  <img src="assets/img/customer-review.svg"/>
+</header>
+
+<main class="has-side-padding">
+
+  <h1>Отзывы покупателей</h1>
+  <p class="text-center"><a href="#comment-form-anchor" data-smooth-scroll>Оставить отзыв <i class="fas fa-pencil-alt"></i></a></p>
+
+  <section  id="comments">
+    {{#each comments-registrants.post}}
+    <div class="post">
+      <p>{{comment}}</p>
+      <p>{{from}}</p>     
+    </div>    
+    {{/each}}
+  </section>
+
+  {{!-- > disclaimer-individuality --}}
+
+  <span class="anchor" id="comment-form-anchor"></span>
+  {{> comment-form customer-comment=true }}
+
+  {{> gift-for-comment-modal}}
+
+  {{> ld-json-comments }}
+
+</main>

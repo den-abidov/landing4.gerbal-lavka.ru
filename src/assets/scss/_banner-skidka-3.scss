@@ -1,0 +1,77 @@
+div#banner-skidka
+{
+  background-color: #ebebeb; /* Used if the image is unavailable */
+
+  div#banner-content
+  {
+    max-width:420px;
+    margin:auto;
+    /* Больше про CSS-фон на https://www.w3schools.com/css/css3_backgrounds.asp */
+    background-position: right;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+
+    @if $build
+    {
+      background-image: url("assets/img/banner_background_300x200.webp");
+    }
+    @else
+    {
+      // значит, по умолчанию - compile
+      background-image: url("../img/banner_background_300x200.webp");
+    }
+
+    div#text
+    {
+      padding:1rem;
+      width:200px;
+      h2
+      {
+        font-size: 1.3rem;
+        color:$gray3;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      h3
+      {
+        font-size: 1.0rem;
+        color:rgb(155,0,0);
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      p
+      {
+        font-size: 0.9rem;
+      }
+    }
+
+    p, a
+    {
+      margin-bottom:0px;
+    }
+
+    .button.warning
+    {
+      background-color: transparent;
+      border:1px solid $green;
+      color:$green_darker;
+    }
+    .button.warning:hover
+    {
+      background-color: $green;
+      border:1px solid $green;
+      color:white;
+    }
+
+    .button.warning[disabled], .button.warning[disabled]:hover
+    {
+      background-color: $green;
+      border:1px solid $green;
+      color:white;
+    }
+  }
+
+
+
+
+}

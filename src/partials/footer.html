@@ -1,0 +1,41 @@
+<footer>
+
+  <!--На больших экранах : footer = фиксированная снизу зелёная полоса. См. _footer.scss -->
+
+  <div class="show-for-small-only">
+
+      <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+        <li><a id="footer-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a></li>
+        <li><a id="footer-katalog" href="katalog.html"><i class="fas fa-barcode"></i>&nbsp;&nbsp;Каталог и Цены</a></li>
+        <li><a id="footer-how-to-buy" href="buy-options.html"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Как купить</a></li>
+        <li><a id="footer-skidki" href="skidki.html"><i class="fas fa-tags"></i>&nbsp;&nbsp;Скидки</a></li>
+        <li><a id="footer-dostavka" href="dostavka.html"><i class="fas fa-truck"></i>&nbsp;&nbsp;Доставка</a></li>
+        <li><a id="footer-track" href="track-order.html"><i class="fas fa-search"></i>&nbsp;&nbsp;Отслеживание</a></li>
+        <li><a id="footer-oplata" href="payment.html"><i class="far fa-credit-card"></i>&nbsp;&nbsp;Оплата</a></li>
+        <li><a id="footer-garantii" href="garantii.html"><i class="fas fa-shield-alt"></i>&nbsp;&nbsp;Защита покупателя</a></li>
+        <li><a id="footer-contacts" href="contacts.html"><i class="far fa-address-card"></i>&nbsp;&nbsp;Контакты</a></li>
+        <li><a id="footer-otzivi" href="comments.html"><i class="far fa-comment-dots"></i>&nbsp;&nbsp;Отзывы</a></li>
+        <li><a id="footer-register" href="register.html"><i class="far fa-edit"></i>&nbsp;&nbsp;Регистрация</a></li>
+        <!-- li><a id="footer-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Карта клиента</a></li>
+        <li><a id="footer-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Скидки Гербалайф</a></li>
+        <li><a id="footer-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Отслеживание заказов</a></li>
+        <li><a id="footer-main" href="main.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Программы снижения веса</a></li -->
+      </ul>
+    {{> to-shop}}
+
+      <br/>
+
+      <!--p class="text-center"><a id="footer-katalog" class="button success" href="https://shop.gerbal-lavka.ru/catalog">Магазин {{> icon-bootstrap-cart }}</a></p -->
+
+      <div class="text-center">
+        <img src="assets/img/H-partner-logo-white.svg"/>
+      </div>
+
+      <div id="bottom-p">
+        <p>2021 &#169; Ассоциация дистрибьютеров</p>
+        <p><a data-open="politicsModal"><u>Политика конфиденциальности</u></a></p>
+      </div>
+
+  </div><!-- show-for-small-only -->
+
+</footer>

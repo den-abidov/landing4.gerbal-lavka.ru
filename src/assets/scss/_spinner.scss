@@ -1,0 +1,44 @@
+#spinner 
+{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #80bb27;/*#3498db;*/
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    margin:auto;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// стили для контента в разных режимах
+#open
+{
+  width:100%;
+  display:none;
+}
+#closed
+{
+  width:100%;
+  display:none;
+}
+#loading
+{
+  width:100%;  
+  p
+  {
+    text-align: center;
+    text-indent:0px;
+    margin-top:20px;
+    margin-bottom:6px;
+  }
+}

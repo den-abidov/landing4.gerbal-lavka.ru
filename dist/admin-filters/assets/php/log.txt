@@ -1,0 +1,20 @@
+Проверка 1 : Есть ли админовский ключ ?
+check needed = true, passed = false
+Проверка пройдена.
+
+Проверка 2 : IP в белом списке ?
+check needed = true, passed = false
+Проверка пройдена.
+
+Проверка 3 : IP в чёрном списке ?
+check needed = true, passed = true
+Проверка пройдена.
+
+Проверка 4 : Это поисковой бот ?
+check needed = true, passed = false
+Проверка пройдена.
+
+Проверка 5 : Сайт отключён ?
+check needed = false, passed = false
+Сайт отключён.
+

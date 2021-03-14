@@ -1,0 +1,12 @@
+{{#if sticky}}
+
+  {{> sticky-top }}
+  <div id="top"></div> <!-- для стрелки вверх-->
+  {{> sticky-topNav }}
+
+{{else}}
+
+  <div id="top"></div> <!-- для стрелки вверх-->
+  {{> topNav}}
+
+{{/if}}

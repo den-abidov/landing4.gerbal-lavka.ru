@@ -1,0 +1,21 @@
+#top-nav
+{
+  /* зафиксируй сверху */
+  position:fixed;
+  top:0px; left:0px;
+  width:100%;
+  z-index: 1;
+  
+  background-color: $theme_color;
+  text-align: center;
+  color:white;
+  padding:15px 0px;
+
+  #menu-button, #top-callback
+  {
+    margin-bottom: 0px;
+    font-size: 1rem;
+  }
+  // Цвета кнопок задаю в topNav.html добавляя классы grey и orange.
+  // А сами эти цвета заданы в _foundation-override.scss
+}

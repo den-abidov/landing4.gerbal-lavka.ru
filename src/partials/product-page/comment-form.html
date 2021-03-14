@@ -1,0 +1,50 @@
+<section id="comment-form" x-data="getCommentFormProps()">
+
+  <div class="text-center"><img src="assets/img/guy_with_laptop.svg"/></div>
+
+  <h5>Оставьте отзыв</h5>
+
+  {{#if customer-comment }}
+    <p class="text-center">И получите скидку 100 руб. на cледующий заказ. <a data-open="giftForCommentModal"><u>Условия</u></a></p>
+  {{/if}}
+
+  <label>* Ваше имя или ник</label>
+  <input id="name-input" type="text" :class="{ 'is-invalid-input': nameError }" x-on:click="removeErrorMessages()" x-model="name">
+
+  <div class="callout danger" x-show="nameError">
+    Укажите имя
+  </div>
+
+  {{#if customer-comment }}
+  <label>Откуда Вы</label>
+  <input id="place-input" type="text" x-on:click="removeErrorMessages()" x-model="place">
+  <input id="subject" type="hidden" value="отзыв покупателя">
+  {{else}}
+  <input id="subject" type="hidden" value="отзыв на продукт">
+  {{/if}}
+
+  <label>Комментарий</label>
+  <textarea id="comment" :class="{ 'is-invalid-input': commentError }" x-on:click="removeErrorMessages()" x-model="comment"></textarea>
+  <div class="callout danger" x-show="commentError">
+    Напишите комментарий
+  </div>
+
+  <div id="send-button-div"><button  class="button success" id="send-comment" x-show="sendVisible" x-on:click="whenSendPressed()" x-bind:disabled="errorVisible">Отправить</button></div>
+
+  <p id="sending-comment" class="text-center" x-show="sendingVisible">Отправляем комментарий&nbsp;&nbsp;<i class="fas fa-spinner fa-pulse"></i></p>
+
+  <div class="callout success" id="comment-sent-success" x-show="successVisible">
+    <div>
+      Ваш комментарий отправлен <i class="fas fa-check"></i><br/>
+      Скоро он здесь появится.<br/>
+      Большое Вам спасибо! &#128522;
+    </div>
+  </div>
+
+  <div class="callout danger" id="comment-sent-failure" x-show="failureVisible">
+    <div>
+      Техническая ошибка &#129300;<br/>
+      Попробуйте ещё раз позже.
+    </div>
+  </div>
+</section>

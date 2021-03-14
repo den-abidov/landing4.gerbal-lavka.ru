@@ -1,0 +1,83 @@
+div#callback-form
+{
+  max-width:400px;
+  margin:auto;
+
+  .text-left
+  {
+    text-align: left;
+  }
+
+  label
+  {
+    margin-top:16px;
+    //font-weight:bold;
+  }
+  input
+  {
+    text-align: center;
+    font-size:1.2rem;
+    color:$gray1;
+    margin-bottom:5px;
+  }
+  select#when-to-call
+  {
+    font-size: 1.2rem;
+  }
+
+  fieldset
+  {
+    legend
+    {
+      font-size:0.9rem;
+    }
+    label
+    {
+      font-size:1rem;
+      margin-top:0px;
+    }
+  }
+
+  div#warning
+  {
+    margin-top:10px;
+    div:first-child{ text-align: center; img{ width:80px; margin-bottom:10px;} }
+    font-size:0.9rem;
+    i
+    {
+      font-size:3rem;
+      color: orange;
+    }
+    p
+    {
+      text-align: left;
+      text-indent: 15px;
+    }
+  }
+
+  .margin-bottom-0
+  {
+    margin-bottom: 0px;
+  }
+  p.error
+  {
+    color:red;
+    font-size:0.9rem;
+    margin-bottom:0px;
+  }
+  .mark-error
+  {
+    background-color: rgba(255,0,0,0.02);
+    color:rgb(200,0,0);
+    border:1px solid red;
+  }
+  div#call-me
+  {
+    margin:20px auto;
+    a#submit
+    {
+      padding:10px 30px;
+      font-size:1rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+#offCanvas
+{
+  p.menu-title
+  {
+    margin-top:1rem;
+    margin-bottom: 0px;
+    padding-left:1rem;
+    font-weight: bold;
+    img
+    {
+      width:30px;
+      vertical-align: bottom;
+    }
+  }
+}
+
+ul.off-canvas-menu
+{
+
+  @import "_menu-links";
+
+  li
+  {
+    border-bottom:1px solid rgb(240,240,240);
+  }
+
+  ul.nested li:hover
+  {
+    background-color:rgb(240,240,240);    
+  }
+
+  .top-menu-item-selected //класс, чтобы пометить пункт меню
+  {
+    background-color: $gray8;//#ddf2ff;
+  }
+
+  a#topNav-Herbalife::after
+  {
+    border-color:orangered transparent transparent;
+  }
+}
+

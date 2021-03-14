@@ -1,0 +1,24 @@
+// Общие стили
+@import 'common';
+
+@import "product-comments";
+@import "product-page";
+
+// раздел "Упаковка"
+#box
+{
+    #many-flavours
+    {
+      text-align: center;
+    }
+    #flavors
+    {
+      max-width:400px;
+      margin:auto;
+      text-align:left;
+    }
+    #melon-bag
+    {
+       text-align: center;
+    }
+} 

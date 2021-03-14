@@ -1,0 +1,14 @@
+<table id="table-products">
+  <tbody>
+  {{#each slider-products.product}}
+  <tr>
+    <td><img src="assets/img/product/{{imageFile}}"></td>
+    <td>
+      <h4>{{name}}</h4>
+      <p class="prices"><span class="full-price">{{price100}}</span> <span class="new-price">{{priceMinus30}}</span> <span class="rub">руб.</span></p>
+      <p><span class="skidka">скидка {{ skidka30 }} руб.</span></p>
+    </td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>

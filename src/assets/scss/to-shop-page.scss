@@ -1,0 +1,36 @@
+// Общие стили
+@import 'common';
+@import '_ask-card-modal.scss';
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding:0 10px;
+
+  h1
+  {
+    font-size: 1.5rem;
+  }
+
+  table
+  {
+    width:280px;
+    margin:auto;
+    tbody
+    {
+      background-color: rgba(0,0,0,0.05);
+      border:none;
+    }
+    img
+    {
+      width:100px;
+    }
+    p
+    {
+      margin-bottom:0;
+      text-align: left;
+    }
+
+  }
+}

@@ -1,0 +1,84 @@
+.navigation
+{
+  max-width:500px;
+  margin: auto;
+  text-align:center;
+  a
+  {
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    color:rgb(100,100,100);
+  }
+  a:hover
+  {
+    background-color:rgb(230,230,230);
+    color:black;
+  }
+  .this-page
+  {
+    color:black;    
+  }
+  a.green
+  {
+    background-color:$theme_color;
+    color:white;
+  }
+  a.green:hover
+  {
+    opacity:0.8;
+  }
+ 
+
+  //на малых экранах, сделай по 1 ссылке на строку
+  @media screen and (max-width: 600px/*350px*/) 
+  {
+    a
+    {
+      display:inline-block;
+      margin:auto;
+      text-align:center;      
+    }
+  }
+  
+}
+
+// Кнопка "Открыть корзину" на странице page1-katalog.html
+#navigation-katalog
+{
+  width:100%; 
+  position:fixed;
+  top:60px;
+  
+  text-align: center;
+
+  a
+  {
+    display:inline-block;
+    padding:10px 10px;
+    border-radius:5px;
+    text-decoration:none;
+
+    color:red!important;
+    background-color:rgb(255,240,240)!important; 
+    width:240px;
+    text-align: center;
+  }
+  a:hover
+  {
+    background-color:rgb(255,220,220)!important;    
+  }  
+}
+
+//на больших экранах
+@media screen and (min-width: 601px) 
+{
+  #navigation-katalog
+  {
+    width:100%; 
+    position:fixed;
+    top:60px;
+    right:4px;
+    text-align:right;
+  }
+}

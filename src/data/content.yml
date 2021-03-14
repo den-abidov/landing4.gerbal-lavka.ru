@@ -1,0 +1,43 @@
+item:         
+  -
+    background-color: ffffff #f58d74
+    border-color: f0f0f0
+    text: Почему товар со скидкой
+    href: anchor-faq-discount
+    imageFile: tag.svg
+  -
+    background-color: f0f0f0 #f5a872
+    border-color: f0f0f0
+    text: Товар оригинальный ?
+    href: anchor-faq-genuine
+    imageFile: content_search.svg
+  -
+    background-color: ffffff #fcc777
+    border-color: f0f0f0
+    text: Доставка
+    href: anchor-faq-dostavka
+    imageFile: content_delivery.svg   
+  -
+    background-color: f0f0f0 #fbf583
+    border-color: f0f0f0
+    text: Как заказать
+    href: anchor-faq-order
+    imageFile: content_shopping-cart.svg  
+  -
+    background-color: ffffff #add68a
+    border-color: f0f0f0
+    text: Как оплатить
+    href: anchor-faq-payment
+    imageFile: content_bank.svg    
+  -
+    background-color: f0f0f0 #64c195
+    border-color: f0f0f0
+    text: Защита покупателя
+    href: anchor-faq-protection
+    imageFile: content_shield.svg     
+  -
+    background-color: ffffff #56c4c5
+    border-color: f0f0f0
+    text: Отзывы покупателей
+    href: anchor-comments
+    imageFile: content_friendship.svg   

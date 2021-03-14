@@ -1,0 +1,11 @@
+// Общие стили
+@import 'common';
+
+@import "product-comments";
+@import "product-page";
+
+#composition /* переопредели ширину блока */
+{
+    max-width:400px;
+    margin:auto;
+}

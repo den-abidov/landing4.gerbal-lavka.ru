@@ -1,0 +1,40 @@
+// Общие стили
+@import 'common';
+
+header
+{
+  text-align: center;
+  img
+  {
+    width:150px;
+  }
+}
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding:0 10px;
+
+  h2
+  {
+    text-align: center;
+  }
+
+  p
+  {
+    text-indent: 15px;
+  }
+  div#herbalife-address
+  {
+    max-width:280px;
+    margin:auto;
+    border:1px solid $gray8;
+    padding:20px;
+    p
+    {
+      text-indent: 0px;
+    }
+  }
+}
+

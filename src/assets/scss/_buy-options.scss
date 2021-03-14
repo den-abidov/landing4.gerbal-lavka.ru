@@ -1,0 +1,78 @@
+@import "common";
+
+header
+{
+  max-width:800px;
+  margin:auto;
+  text-align: center;
+}
+main
+{
+  padding:10px;
+  max-width:600px;
+  margin:auto;
+
+  section
+  {
+    margin-bottom:40px;
+  }
+
+  section#contents
+  {
+    p
+    {
+      text-align: center;
+      text-indent:0;
+      margin-bottom: 5px;
+    }
+    ul
+    {
+      list-style-type: none;
+      margin:auto;
+    }
+  }
+
+  // для секции ссылок внизу страницы
+  .current-page
+  {
+    opacity:0.5;
+    background-color: rgba(0,0,0,0.1);
+  }
+} // main
+
+// Шрифты
+/*h1{ text-align: center; color:darkred;  }
+h2{ text-align: center; color:red;  }
+h3{ text-align: center; color:red;  }
+h4{ text-align: center; color:red;  }*/
+
+h1{ text-align: center; color:$gray3;  }
+h2{ text-align: center; color:$gray1; }
+h3{ text-align: center; color:darkred;  }
+h4{ text-align: center; color:$gray2;  font-weight:bold;}
+p{  text-indent: 15px;}
+
+// Регулировка размера шрифтов
+
+/* На малых экранах, 0...600 px */
+@media screen and (max-width: 600px)
+{
+
+}
+
+/* На больших экранах, >600 px */
+@media screen and (min-width: 601px)
+{
+  h1{  font-size:1.5rem; }
+  h2{  font-size:1.3rem; }
+  h3{  font-size:1.1rem; }
+  h4{  font-size:1rem; }
+}
+
+div#related-links
+{
+  p
+  {
+    text-indent: 0;
+  }
+}

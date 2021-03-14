@@ -1,0 +1,47 @@
+{
+  "name": "optimized_build",
+  "version": "1.0.0",
+  "description": "Gulp workflow for css & js minification & inlining in pages.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "я",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "panini": "^1.7.0",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "alpinejs": "^2.7.3",
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
+    "what-input": "^5.2.10"
+  }
+}

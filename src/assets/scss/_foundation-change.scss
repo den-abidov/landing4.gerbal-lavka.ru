@@ -1,0 +1,61 @@
+//change placeholder color
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+{
+  color: $placeholder_color;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{
+  color: $placeholder_color;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+{
+  color: $placeholder_color;
+}
+
+input::placeholder,
+textarea::placeholder
+{
+  color: $placeholder_color;
+}
+
+// for Orbit arrows
+.orbit-next
+{
+  z-index: 1;
+  background-color:rgba(0,0,0,0.2);
+}
+.orbit-previous
+{
+  z-index: 1;
+  background-color:rgba(0,0,0,0.2);
+}
+
+.nav-arrow /*используй вместе с классами orbit-next и orbit-previous*/
+{
+  color:white;
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 5px;
+  font-size:1.5rem;
+  padding:10px;
+  font-weight: normal;
+}
+
+//цвет треугольника выпадающего под-меню
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a::after
+{
+  border-top-color: white;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+// фон выезжающего меню
+.off-canvas
+{
+  background-color:white;
+}

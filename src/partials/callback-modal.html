@@ -1,0 +1,54 @@
+<!-- Callback Modal -->
+<!-- div class="reveal" id="callbackModal" data-reveal data-animation-in="slide-in-down" data-animation-out="fade-out" -->
+<div class="reveal" id="callbackModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+    <div id="callbackForm" x-data="getCallbackModalProps()">
+        <div class="text-center" id="logo"><img src="assets/img/customer-support.svg"></div>
+        <h4>Обратный звонок</h4>
+
+        <label>Когда Вы готовы принять звонок ?
+            <select id="whenToCall" x-model="whenToCall">
+                <option value="сейчас" selected>Сейчас</option>
+                <option value="через 30 минут">Через 30 минут</option>
+                <option value="через 1 час">Через 1 час</option>
+                <option value="через 2 часа">Через 2 часа</option>
+                <option value="через 3 часа">Через 3 часа</option>
+                <option value="завтра">Завтра</option>
+            </select>
+        </label>
+
+        <label>Как Вас зовут
+            <input type="text" id="name" class="form-control" placeholder="Ваше имя" x-on:input="whenNameChanged()" x-model="name">
+        </label>
+
+        <label>Ваш телефон
+            <input type="text" id="phone" class="form-control" :class="{ 'is-invalid-input': errorVisible }" placeholder="Ваш телефон" x-on:input="whenPhoneChanged()" x-model="phone">
+        </label>
+        <div class="callout danger" x-show="errorVisible">
+            Похоже ошибка в номере
+        </div>
+
+        <!-- Раскомментируй, если хочешь показывать alert-danger при неправильном номере.
+            <div class="alert alert-danger" id="error" x-show="errorVisible">Ошибка в номере. Исправьте.</div>
+        -->
+        <div class="spacer-10px"></div>
+        <button class="button success" id="send" x-show="sendVisible" x-on:click="whenSendPressed()" x-bind:disabled="errorVisible">Позвоните мне</button>
+
+        <p id="sending" class="text-center" x-show="sendingVisible">Отправляем заявку&nbsp;&nbsp;<i class="fas fa-spinner fa-pulse"></i></p>
+
+        <div class="callout success text-center" id="success" x-show="successVisible">
+            <p>Заявка отправлена <i class="fas fa-check"></i></p>
+            <p>Ожидайте наш звонок.</p>
+        </div>
+
+        <div class="callout danger text-center" id="failure" x-show="failureVisible">
+            <p>Техническая ошибка <i class="far fa-frown"></i></p>
+            <p>Попробуйте ещё раз.</p>
+        </div>
+
+    </div><!-- #callbackForm -->
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <p><a data-close><u>Закрыть</u></a></p>
+</div><!-- #callbackModal -->
+

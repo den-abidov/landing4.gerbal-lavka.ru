@@ -1,0 +1,29 @@
+.link-button
+{
+  // font-weight:bold;
+  display: inline-block;
+  padding: 6px 20px;
+  margin-top:0px;
+  margin-bottom:0px;
+  border: none;
+  border-radius: 3px;
+
+  background-color: $theme_color;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.0rem;
+
+  cursor:pointer;
+
+}
+.link-button:hover
+{
+  opacity:0.8;
+  color:white;
+}
+.link-button:visited
+{
+  color:white;
+}

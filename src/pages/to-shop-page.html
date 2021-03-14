@@ -1,0 +1,33 @@
+---
+
+pageName: to-shop-page
+shopUrl: 'https://shop.gerbal-lavka.ru/catalog'
+title: Переход в интернет-магазин Гербалайф
+description: Переход в интернет-магазин Гербалайф
+keywords: магазин Гербалайф, интернет-магазин Гербалайф
+
+---
+<main>
+  <br/>
+  <section style="text-align: center;">
+    <div><img src="assets/img/shopping-bag-4.svg" style="width:150px;"></div>
+    <h1>Переход в интернет-магазин</h1>
+    <p class="text-center">цены со скидкой</p>
+    <p><a href="{{shopUrl}}" class="button success"> Перейти <i class="fas fa-chevron-right"></i> </a></p>
+    <br/>
+    <table>
+      <tbody>
+      <tr>
+        <td><img src="assets/img/card-present-5000.svg"></td>
+        <td><p>Если у Вас есть<br/>карта Клиента,<br/>нажмите <a data-open="askCardModal">сюда</a></p></td>
+      </tr>
+      </tbody>
+    </table>
+    <p><a data-open="getCardFreeModal">Как получить карту бесплатно ?</a></p>
+  </section>
+  <br/>
+  <br/>
+
+</main>
+{{> ask-card-modal }}
+{{> get-card-free-modal }}

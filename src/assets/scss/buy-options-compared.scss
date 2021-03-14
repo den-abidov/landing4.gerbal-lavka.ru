@@ -1,0 +1,68 @@
+@import "common";
+@import "_Herbalife.scss";
+
+header
+{
+  max-width:800px;
+  margin:auto;
+  text-align: center;
+}
+main
+{
+  padding:10px;
+  max-width:600px;
+  margin:auto;
+
+  h1
+  {
+    font-size:1.5rem;
+    text-align:center;
+  }
+  h2
+  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h3
+  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p
+  {
+    text-indent: 15px;
+  }
+  .us
+  {
+    background-color: rgba(255,200,0,0.2);
+  }
+  .Herbalife
+  {
+    background-color: rgba(128,187,39,0.2) ;
+  }
+
+  table#prices
+  {
+    font-size: 0.9rem;
+    th
+    {
+      font-weight:normal;
+      text-align: right;
+    }
+    th:last-child
+    {
+      font-weight: bold;
+    }
+    td
+    {
+      text-align: right;
+    }
+    td:last-child
+    {
+      font-weight: bold;
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+// Общие стили
+@import 'common';
+
+header
+{
+  padding: 0px 20px;
+  text-align: center;
+}
+
+main
+{
+  max-width:600px;
+  margin:auto;
+  padding: 0px 10px;
+  h2
+  {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  p
+  {
+    text-indent: 15px;
+  }
+  i
+  {
+    margin-left:0px!important;
+  }
+  section#contents
+  {
+    max-width:210px;
+    margin:auto;
+    p
+    {
+      text-indent: 0;
+      margin-bottom:0;
+      text-align: left;
+    }
+  }
+}
+

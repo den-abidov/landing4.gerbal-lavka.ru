@@ -1,0 +1,14 @@
+div#parent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  div#parent div#child {
+    width: 220px;
+    height: 140px;
+    font-size: 5rem;
+    color: grey;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    line-height: 3rem; }

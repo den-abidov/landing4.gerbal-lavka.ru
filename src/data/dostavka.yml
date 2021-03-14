@@ -1,0 +1,31 @@
+item:         
+  -
+    name: Самовывоз
+    duration: от 15 минут
+    tracking: не требуется
+    description: Приезжаете и забираете оплаченный заказ по его номеру из брэнд центра Гербалайф.
+    imageFile: dostavka_cp.svg
+  -
+    name: Почта России
+    duration: 7 - 14 рабочих дней
+    tracking: Да &#10003;
+    description: Доставка в любую точку России ведь отделения почты есть везде.
+    imageFile: dostavka_post.png
+  -
+    name: Курьер
+    duration: 3 - 5 рабочих дней
+    tracking: Да &#10003;
+    description: Курьер привезёт заказ до двери. Доставка с понедельника по пятницу.
+    imageFile: dostavka_carrier.svg   
+  -
+    name: Постамат
+    duration: 3 - 5 рабочих дней
+    tracking: Да &#10003;
+    description: Постаматы имеются во многих магазинах. Найдите ближайшие к Вам на pickpoint.ru
+    imageFile: dostavka_postamat.jpg
+  -
+    name: Пункт выдачи
+    duration: 3 - 5 рабочих дней
+    tracking: Да &#10003;
+    description: В пунктах выдачи заказы из разных интернет-магазинов, в том числе и Гербалайф, выдают сотрудники. 
+    imageFile: dostavka_pvz.svg         

@@ -1,0 +1,58 @@
+// Общие стили
+@import 'common';
+
+@import "product-page";
+
+#content
+{
+ 
+  #intro
+  {
+    max-width:600px;
+    margin:auto;
+    margin-top:20px;
+
+    .boxed-p
+    {
+      background-color: rgb(230,230,230);
+      color:rgb(50,50,50);
+      border-radius:5px;
+      padding:10px 20px;
+    }
+  }
+  
+  #comparison-table
+  {
+    max-width:360px;
+    margin:auto;
+
+    .program-product
+    {
+      display:inline-block;
+      width:240px;
+      margin-right:30px;
+    }
+  }
+  #table-note
+  {
+    max-width:550px;
+    margin:auto;
+    p
+    {
+      text-indent:0px;
+    }
+  }
+
+  div.image-div
+  {
+    max-width:500px;
+    padding-top:20px;
+    padding-bottom: 10px;
+    margin:auto;
+
+    img
+    {
+      width:100%;
+    }
+  }
+}

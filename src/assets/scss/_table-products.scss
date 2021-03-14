@@ -1,0 +1,71 @@
+  table#table-products
+  {
+    max-width:380px;
+    margin:auto;
+
+    td:first-child
+    {
+      width:150px;
+    }
+
+      text-align: center;
+      img
+      {
+        height:100px;
+        //margin-bottom:10px;
+      }
+      h4
+      {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom:5px;
+      }
+
+      p
+      {
+        margin-bottom:5px;
+      }
+
+      p.description
+      {
+        //font-size:0.9rem;
+        // word-break: break-all;
+        padding:0 10px;
+        text-align: left;
+        text-indent:15px;
+        word-break: break-word;
+      }
+
+      span.full-price
+      {
+        text-decoration: line-through;
+      }
+      span.new-price
+      {
+        color:#80bb27;
+        font-size:1.6rem;
+      }
+      span.rub
+      {
+        color:#80bb27;
+      }
+      .skidka
+      {
+        padding:2px 6px;
+        display: inline-block;
+        background-color: orangered;
+        color:white;
+        border-radius:5px;
+      }
+      p.skidka-note
+      {
+        font-size:0.9rem;
+        text-align: left;
+        margin-bottom:10px;
+      }
+      a
+      {
+        margin-bottom:0px;
+      }
+
+  }

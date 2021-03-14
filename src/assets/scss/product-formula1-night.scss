@@ -1,0 +1,17 @@
+// Общие стили
+@import 'common';
+
+@import "product-comments";
+@import "product-page";
+
+
+// раздел "Состав"
+#composition
+{
+  table
+  {
+    max-width:240px;
+    margin:auto;
+    text-align:left;
+  }
+} 

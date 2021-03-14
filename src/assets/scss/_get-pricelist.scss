@@ -1,0 +1,46 @@
+div#get-pricelist
+{
+  background-color: $gray9;
+  padding:20px 10px;
+
+  div#form
+  {
+    max-width:300px;
+    margin: auto;
+
+    table tbody
+    {
+      border:none;
+      background-color: transparent;
+      td:first-child
+      {
+        padding-left:0px;
+      }
+      td:last-child
+      {
+        padding-right:0px;
+        a
+        {
+          color:darkred;
+        }
+      }
+    }
+
+    img
+    {
+      width:70px;
+    }
+
+    input#user-email
+    {
+       text-align: center;
+       margin-bottom:0px;
+    }
+
+    button#send-email
+    {
+      font-size: 1rem;
+    }
+  }
+
+}

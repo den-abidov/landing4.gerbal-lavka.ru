@@ -1,0 +1,45 @@
+// Общие стили
+@import 'common';
+
+@import "product-comments";
+@import "product-page";
+
+// переопределяю размер
+#links
+{
+  max-width:220px!important;
+  margin:auto;
+}
+
+#water-norm
+{
+    #calculator
+    {
+        max-width:200px;
+        margin:auto;
+
+        text-align: center;
+        text-indent: 0px;
+        p 
+        {
+        text-indent:0px;
+        text-align: center;    
+        }
+        #calculate-button 
+        {
+            width:100%;
+        }
+        #mass-input
+        {
+        text-align:center;
+        font-size:2rem;
+        color:$theme_color;
+        }
+        #result-p
+        {
+            font-size:4rem; 
+            color:$theme_color;
+            margin-bottom:0px;
+        }
+    }
+}

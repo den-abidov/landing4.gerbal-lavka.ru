@@ -1,0 +1,36 @@
+// Общие стили
+@import 'common';
+
+@import "phone-coupon";
+
+section
+{
+  max-width: 500px;
+  margin:10px auto;
+  padding:10px;
+
+  border:1px solid $gray9;
+  box-shadow: 2px 2px rgb(220,220,220);
+  border-radius: 5px;
+
+  h2
+  {
+    text-align: center;
+  }
+
+  p:first-child
+  {
+    text-align: center;
+    img
+    {
+      width:200px;
+    }
+  }
+}
+
+section:hover
+{
+  border:1px solid $gray8;
+  box-shadow: 2px 2px rgb(200,200,200);
+  background-color: rgb(245,245,245);
+}

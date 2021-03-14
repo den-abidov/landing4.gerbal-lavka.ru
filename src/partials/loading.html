@@ -1,0 +1,38 @@
+<div id="loading">
+
+  <div id="loading-content">
+    <img id="logo" src="assets/img/logo.svg">
+    <p>САЙТ ЗАГРУЖАЕТСЯ</p>
+     <svg width="300" height="5">
+      <rect x="0" y="0" width="300" height="5" style="fill:orange; fill-opacity:0.25;" />
+      <rect id="progress-bar" x="0" y="0" width="20" height="5" style="fill:orange; fill-opacity:1;" />
+    </svg>
+    <p id="slogan">Цены Вас порадуют</p>
+    <img id="tip-image" src="assets/img/man.svg">
+    <div id="tip-text" class="callout success">
+      А вы знали, что ...<br/>Cбалансированное питание - это 80% успеха в снижении веса, и только 20% - спорт.
+    </div>
+  </div>
+
+  <script>
+
+      const N=300; // количество шагов
+      const w = 300; // длина прогресс-бара, px
+      const dw = w/N; // длина 1 шага
+
+      const T=6000; // полная длительность, мс
+      const dt = T/N; // длительность 1 временного промежутка, мс
+
+
+      for (let i = 0; i < N; i++)
+      {
+          setTimeout(()=>{setWidth(i*dw);}, i*dt);
+      }
+
+      function setWidth(w)
+      {
+          document.getElementById('progress-bar').setAttribute("width", w+"px");
+      }
+  </script>
+
+</div>
