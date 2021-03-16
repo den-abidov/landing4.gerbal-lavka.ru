@@ -1,4 +1,4 @@
-2021.03.15 main
+2021.03.15 master
 Новый проект на основе landing-buy.gerbal-lavka.ru
 Инструменты : Gulp, Panini, Zurb Foundation, jQuery, Alpine JS.
 
@@ -15,6 +15,9 @@
     dist/robots.txt
     dist/sitemap.txt
 
+2021.03.16 main
+Внёс изменение : даю скидку 35% сразу в первом заказе, если он на 100 очков.
+Если заказы мелкие, меньше 100 очков, то нужно набрать 200 очков.
 
 ---
 Присоединить remote url к сайту :

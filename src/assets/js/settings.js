@@ -6,7 +6,7 @@ const settings = {
 
         zastavka_after_callback:false, // показывать заставку после обратного звонка
 
-        shop_url: 'https://shop.gerbal-lavka.ru/catalog',
+        shop_url: 'https://shop-cp.gerbal-lavka.ru/catalog',
 
         client_card_number: 'minus35', // номер карты клиента, дающей повышенную скидку
 
