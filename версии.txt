@@ -15,9 +15,9 @@
     dist/robots.txt
     dist/sitemap.txt
 
-2021.03.16 main
+2021.03.16 b1
 Внёс изменение : даю скидку 35% сразу в первом заказе, если он на 100 очков.
-Если заказы мелкие, меньше 100 очков, то нужно набрать 200 очков.
+Если заказы мелкие, меньше 100 очков, то скидка 25% и нужно набрать эти 100 очков.
 
 ---
 Присоединить remote url к сайту :
@@ -39,4 +39,4 @@ localStorage.setItem("requestSubmitted", false);
 git add . && git commit -m "фикс" && git checkout -b b1
 
 На продакшн :
-gulp build && git add . && git commit -m "production build" && git push origin b2 && ~/update-master.sh b2
+gulp build && git add . && git commit -m "production build" && git push origin b1 && ~/update-master.sh b1
