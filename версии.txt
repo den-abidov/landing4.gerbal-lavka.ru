@@ -35,7 +35,7 @@ git push --all origin
 Чтобы для сайта, убрать заставку после отправки запроса на обратный звонок :
 localStorage.setItem("requestSubmitted", false);
 
-Локальная разработка :
+Локальная разработка
 git add . && git commit -m "фикс" && git checkout -b b1
 
 На продакшн :
